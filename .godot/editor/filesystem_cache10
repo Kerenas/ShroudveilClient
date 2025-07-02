@@ -1,11 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751432203
+::res://::1751485418
+CardManager.gd::GDScript::1483420642381995176::1751484509::0::1::::<>Node2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2458472973102637141::1751404641::1751404656::1::::<><><>0<>0<>48f08a5b0a3ace9bd2d762b7e1eeba09<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 IMG_6099.png::CompressedTexture2D/CompressedTexture2D::4517594144389736468::1751429508::1751430012::1::::<><><>0<>0<>f5969b3acdb1ff15a7f7714a8f7b22b4<>res://.godot/imported/IMG_6099.png-714d57f881f0aaaf4ab137c62d5d99bc.ctex::
 IMG_6100.png::CompressedTexture2D/CompressedTexture2D::6493342554271753402::1751429525::1751430012::1::::<><><>0<>0<>11aaf0883de6351dff751a62f00a0162<>res://.godot/imported/IMG_6100.png-5945b490682ddb80dd0c4ce6d4d74f08.ctex::
-Juniper_Playmat.tscn::PackedScene/PackedScene::5804576740322776398::1751423275::0::1::::<><><>0<>0<><>::uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png
-main.tscn::PackedScene/PackedScene::3890554508267155326::1751431914::0::1::::<><><>0<>0<><>::
+Juniper_Playmat.tscn::PackedScene::5804576740322776398::1751485418::0::1::::<><><>0<>0<><>::uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png<>uid://b0j3jvoln4a4p::::res://Playmat.gd
+main.tscn::PackedScene::3890554508267155326::1751485464::0::1::::<><><>0<>0<><>::uid://vetyr080ykro::::res://CardManager.gd<>uid://cluwwi6ftoduf::::res://Cards/Scenes/scramble.tscn<>uid://pbkwi2a181yb::::res://Cards/Scenes/scramble,_the_soothed.tscn<>uid://dii6c0ltrfnmu::::res://Cards/Scenes/scramble_lvl_2.tscn<>uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png<>uid://g82e817mw8yo::::res://PartySlot1.tscn
 networkinglol.gd::GDScript/GDScript::6943486703193052036::1751418496::0::1::::<>Node2D<><>0<>0<><>::
+Playmat.gd::GDScript::4161438447508971393::1751470857::0::1::::<>Node2D<><>0<>0<><>::
+PartySlot1.tscn::PackedScene::490905804598823858::1751485418::0::1::::<><><>0<>0<><>::uid://b0j3jvoln4a4p::::res://Playmat.gd
 Shroudveil_Back.png::CompressedTexture2D/CompressedTexture2D::5950519309813544872::1751429496::1751430013::1::::<><><>0<>0<>4ab582800e9629d9fd9ee88455eff342<>res://.godot/imported/Shroudveil_Back.png-1705bc3444b6528f0454a37a06b8f4f7.ctex::
 ::res://Card Backs/::1751418809
 ::res://Cards/::1751431757
@@ -24,8 +27,10 @@ Relic_1.png::CompressedTexture2D/CompressedTexture2D::3680588267058724912::17514
 Spells.png::CompressedTexture2D/CompressedTexture2D::7258300099664365827::1751429473::1751430013::1::::<><><>0<>0<>dba6666819f75e18ea95545538f05b39<>res://.godot/imported/Spells.png-2ab32a1e105485682785565b05078e54.ctex::
 Support.png::CompressedTexture2D/CompressedTexture2D::6399741538277665527::1751429430::1751430013::1::::<><><>0<>0<>734a53c9c5178c3604b35a1e90c69b03<>res://.godot/imported/Support.png-8855431a1c990d64f8679ba91ab2b21e.ctex::
 Warrior.png::CompressedTexture2D/CompressedTexture2D::2364135607056838261::1751429443::1751430014::1::::<><><>0<>0<>6d8040e5b394cf026791b4f2de099347<>res://.godot/imported/Warrior.png-bcd988e91f9f347e886842f7dbc03ff0.ctex::
-::res://Cards/Scenes/::1751432181
-scramble.tscn::PackedScene/PackedScene::5587581732121383737::1751432181::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ccg85xy1qj1i8::::res://Cards/Set A/000.png
+::res://Cards/Scenes/::1751485418
+scramble,_the_soothed.tscn::PackedScene::1055543951650710913::1751485418::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bpl1lokb8t8ch::::res://Cards/Set A/002.png
+scramble.tscn::PackedScene::5587581732121383737::1751485418::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ccg85xy1qj1i8::::res://Cards/Set A/000.png
+scramble_lvl_2.tscn::PackedScene::7739174951542415544::1751485418::0::1::::<><><>0<>0<><>::uid://bs74gg1cttukw::::res://Cards/Set A/001.png<>uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd
 ::res://Cards/Set A/::1751430133
 000.png::CompressedTexture2D/CompressedTexture2D::4927663802080511521::1724102236::1751430131::1::::<><><>0<>0<>241b822b2f41654f0008dc93c2ba5892<>res://.godot/imported/000.png-5652141685f861d7a32c5fd2b291d392.ctex::
 001.png::CompressedTexture2D/CompressedTexture2D::3717651820283300802::1724102236::1751430131::1::::<><><>0<>0<>45ef82027ed1cbdfe0c4cd5a559be78b<>res://.godot/imported/001.png-d3396b4252c4bfd7737e96f86f6fa4e8.ctex::
@@ -151,8 +156,7 @@ scramble.tscn::PackedScene/PackedScene::5587581732121383737::1751432181::0::1:::
 IMG_6099.png::CompressedTexture2D/CompressedTexture2D::1151066307373135893::1751429535::1751430013::1::::<><><>0<>0<>5fe08401699abfc40e525d620e93f467<>res://.godot/imported/IMG_6099.png-18cde2e1639bcbb9135f37efcf19b7ae.ctex::
 Juniper_Playmat.png::CompressedTexture2D/CompressedTexture2D::5177690661481452214::1751418600::1751418796::1::::<><><>0<>0<>d05e53a917e0fa26e897b2d6958c0b61<>res://.godot/imported/Juniper_Playmat.png-9babf8f15c5ae04d5218644e0597434b.ctex::
 Scramble_Bell.png::CompressedTexture2D/CompressedTexture2D::4654251124571749153::1751418664::1751418799::1::::<><><>0<>0<>418943b2af8e2505009ff17604e8225f<>res://.godot/imported/Scramble_Bell.png-8259bf5b2d3ad1e05c0a9eba9ddb83fa.ctex::
-::res://scripts/::1751423480
-Card_Template.gd::GDScript/GDScript::2180622143181926788::1751423480::0::1::::Card<>Node2D<><>0<>0<><>::
-::res://scripts/Cards/::1751432203
-GoopDemon.tscn::PackedScene::8028930111584452483::1751432169::0::1::::<><><>0<>0<><>::uid://dyht7t01uhido::::res://Cards/Goop_Demon_FULL_ART_1.png<>uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd
-Scramble.gd::GDScript/GDScript::1942379511651199830::1751431664::0::1::::Scramble<>Node2D<><>0<>0<><>::
+::res://scripts/::1751467131
+Card_Template.gd::GDScript::2180622143181926788::1751467131::0::1::::Card<>Node2D<><>0<>0<><>::
+::res://scripts/Cards/::1751432209
+Scramble.gd::GDScript::1942379511651199830::1751431664::0::1::::Scramble<>Node2D<><>0<>0<><>::

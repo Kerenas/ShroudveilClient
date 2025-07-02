@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://g82e817mw8yo"]
+
+[ext_resource type="Script" uid="uid://b0j3jvoln4a4p" path="res://Playmat.gd" id="1_77vwc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2yk5"]
+size = Vector2(241.25, 333.25)
+
+[node name="PartySlot" type="Node2D"]
+script = ExtResource("1_77vwc")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Party Slot" type="CollisionShape2D" parent="Area2D"]
+z_index = -9
+z_as_relative = false
+shape = SubResource("RectangleShape2D_b2yk5")
