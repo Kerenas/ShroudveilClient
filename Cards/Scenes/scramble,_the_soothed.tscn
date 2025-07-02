@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://pbkwi2a181yb"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_mdny3"]
+[ext_resource type="Texture2D" uid="uid://bpl1lokb8t8ch" path="res://Cards/Set A/002.png" id="2_mtgb5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="Scramble, The Soothed" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_mdny3")
+CardName = "Scramble, The Soothed"
+CardDescriptionm = "Bell Bearer.      When Scramble, the Soothed enters the Party, draw a card. If there is at least one Cat Adventurer in your party, they gain 2 buff counters and Scramble, The Soothed gains 3 buff counters. If at least one of these Cats is a \"Juniper\" adventurer, that adventurer gets 3 Buff Counters instead"
+CardCost = 6
+AdventurerYield = 4
+CardImage = NodePath("ScrambleSoothedSprite")
+AdventurerLvl = 3
+CardType = "Farkitt"
+AdventurerType = "Support"
+AdventurerAttack = 8
+AdventurerHP = 10
+
+[node name="ScrambleSoothedSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_mtgb5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

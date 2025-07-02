@@ -12,17 +12,34 @@ class_name Card extends Node2D
 @export var AdventurerHP: int = 4
 @export var IsCrowned: bool = false
 @export var IsAdventurer: bool = true
+@export var IsHQ: bool = false
+@export var IsRelic: bool = false
 @export var IsItem: bool = false
 @export var IsSpell: bool = false
 @export var BuffCounters: int = 0
 @export var LingeringDamage:int = 0
 @export var IsInDuel: bool = false
 @export var InRaid: bool = false
+@export var IsWarded: bool = false
+
+
+signal hovered
+signal hovered_off
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	#all cards must be children of Card Manager or this will error
+	get_parent().connect_card_signals(self)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_area_2d_mouse_entered() -> void:
+	emit_signal("hovered", self)
+
+
+func _on_area_2d_mouse_exited() -> void:
+	emit_signal("hovered_off", self)

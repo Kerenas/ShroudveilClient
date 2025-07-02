@@ -14,10 +14,14 @@ AdventurerType = "Farkitt"
 AdventurerAttack = 2
 
 [node name="ScrambleSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_up4c1")
 
 [node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.2, 0.2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1.5, -1)
 shape = SubResource("RectangleShape2D_mta0k")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

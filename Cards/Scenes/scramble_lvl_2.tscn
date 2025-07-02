@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dii6c0ltrfnmu"]
+
+[ext_resource type="Texture2D" uid="uid://bs74gg1cttukw" path="res://Cards/Set A/001.png" id="1_4mhfg"]
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="2_m1wdj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mhfg"]
+size = Vector2(150, 210)
+
+[node name="ScrambleLvl2" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("2_m1wdj")
+CardName = "Scramble"
+CardDescriptionm = "When Scramble enters the party, draw a card. If there is at least one Cat Adventurer in your party, Scramble's HP cannot be reduced to 0"
+CardCost = 4
+AdventurerYield = 4
+CardImage = NodePath("ScrambleLvl2Sprite")
+AdventurerLvl = 2
+CardType = "Support"
+AdventurerType = "Farkitt"
+AdventurerAttack = 5
+AdventurerHP = 7
+
+[node name="ScrambleLvl2Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_4mhfg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4mhfg")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
