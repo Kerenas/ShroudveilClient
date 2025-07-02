@@ -21,6 +21,10 @@ class_name Card extends Node2D
 @export var IsInDuel: bool = false
 @export var InRaid: bool = false
 @export var IsWarded: bool = false
+@export var IsXAttack:bool = False 
+@export var XAttackValue:int = 0 
+@export var IsXCost:bool = False
+@export var XCostPaid:int = 0
 
 
 signal hovered
