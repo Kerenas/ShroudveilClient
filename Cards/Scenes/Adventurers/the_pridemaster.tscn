@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://br61nt3tmsqxt"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_8pbsj"]
-[ext_resource type="Texture2D" uid="uid://da33vbg8i0w4n" path="res://Cards/Set A/009.png" id="2_8pbsj"]
+[ext_resource type="Texture2D" uid="uid://b7g37hqt4g524" path="res://Cards/Set B/009The_Pridemaster.png" id="2_1npsi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -22,7 +22,7 @@ IsCrowned = true
 
 [node name="ThePridemasterSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_8pbsj")
+texture = ExtResource("2_1npsi")
 
 [node name="Area2D" type="Area2D" parent="."]
 

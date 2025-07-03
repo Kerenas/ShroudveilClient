@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://pbkwi2a181yb"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_mdny3"]
-[ext_resource type="Texture2D" uid="uid://bpl1lokb8t8ch" path="res://Cards/Set A/002.png" id="2_mtgb5"]
+[ext_resource type="Texture2D" uid="uid://cp11thbvjlt4u" path="res://Cards/Set B/002Scramble,_the_Soothed.png" id="2_ul6xk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -22,7 +22,7 @@ IsCrowned = true
 
 [node name="ScrambleSoothedSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_mtgb5")
+texture = ExtResource("2_ul6xk")
 
 [node name="Area2D" type="Area2D" parent="."]
 

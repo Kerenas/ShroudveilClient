@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dqmpwbp07p1iy"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_fxm7n"]
-[ext_resource type="Texture2D" uid="uid://bbqm02olp7op4" path="res://Cards/Set A/018.png" id="2_fxm7n"]
+[ext_resource type="Texture2D" uid="uid://b3m8wm1rxvurq" path="res://Cards/Set B/018Rungelgan.png" id="2_65sjj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -17,7 +17,7 @@ AdventurerHP = 6
 
 [node name="RungelganSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_fxm7n")
+texture = ExtResource("2_65sjj")
 
 [node name="Area2D" type="Area2D" parent="."]
 

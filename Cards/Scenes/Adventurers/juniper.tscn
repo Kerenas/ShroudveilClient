@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3tk6srjstogf"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_q8ws8"]
-[ext_resource type="Texture2D" uid="uid://obujni5hydht" path="res://Cards/Set A/003.png" id="2_i8yin"]
+[ext_resource type="Texture2D" uid="uid://kob5quowowia" path="res://Cards/Set B/003Juniper.png" id="2_p02u0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -18,7 +18,7 @@ AdventurerHP = 8
 
 [node name="JuniperSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_i8yin")
+texture = ExtResource("2_p02u0")
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://udj5fb02vcqk"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xh06s"]
-[ext_resource type="Texture2D" uid="uid://tkxkacddwwjj" path="res://Cards/Set A/015.png" id="2_xh06s"]
+[ext_resource type="Texture2D" uid="uid://bdmv3utuhgisc" path="res://Cards/Set B/015Razz,_Interloper.png" id="2_hmuu7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -22,7 +22,7 @@ IsCrowned = true
 
 [node name="RazzInterloperSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_xh06s")
+texture = ExtResource("2_hmuu7")
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://knikbkka2spo"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_1blid"]
-[ext_resource type="Texture2D" uid="uid://j0usnavvoi6r" path="res://Cards/Set A/010.png" id="2_1blid"]
+[ext_resource type="Texture2D" uid="uid://mno3h37ivk7d" path="res://Cards/Set B/010Goop_Demon.png" id="2_cqc2l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -16,7 +16,7 @@ AdventurerType = "Support"
 
 [node name="GoopDemonSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_1blid")
+texture = ExtResource("2_cqc2l")
 
 [node name="Area2D" type="Area2D" parent="."]
 

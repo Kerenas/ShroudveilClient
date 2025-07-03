@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://behoi4rs8nc2w"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xaa8e"]
-[ext_resource type="Texture2D" uid="uid://cmffyd8icikwy" path="res://Cards/Set A/006.png" id="2_xaa8e"]
+[ext_resource type="Texture2D" uid="uid://4860w0xr2546" path="res://Cards/Set B/006Berri,_the_Guilty.png" id="2_kemtx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -22,7 +22,7 @@ IsCrowned = true
 
 [node name="BerriTheGuiltySprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_xaa8e")
+texture = ExtResource("2_kemtx")
 
 [node name="Area2D" type="Area2D" parent="."]
 

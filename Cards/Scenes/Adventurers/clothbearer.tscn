@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://blbdnp2k5855r"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_4co0p"]
-[ext_resource type="Texture2D" uid="uid://cdl6sb6xxiog3" path="res://Cards/Set A/016.png" id="2_4co0p"]
+[ext_resource type="Texture2D" uid="uid://dkr2a3hh1c2hm" path="res://Cards/Set B/016Clothbearer.png" id="2_cjajy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -17,7 +17,7 @@ AdventurerHP = 8
 
 [node name="ClothbearerSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_4co0p")
+texture = ExtResource("2_cjajy")
 
 [node name="Area2D" type="Area2D" parent="."]
 

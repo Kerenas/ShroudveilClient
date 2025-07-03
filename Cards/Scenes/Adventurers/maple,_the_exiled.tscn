@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://3nsbm6u0yxel"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_5iev0"]
-[ext_resource type="Texture2D" uid="uid://c0n0pyys33nbt" path="res://Cards/Set A/008.png" id="2_5iev0"]
+[ext_resource type="Texture2D" uid="uid://ofbcgeg2bsg1" path="res://Cards/Set B/008Maple,_the_Exiled.png" id="2_xlf55"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -22,7 +22,7 @@ IsCrowned = true
 
 [node name="MapleTheExiledSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_5iev0")
+texture = ExtResource("2_xlf55")
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cq2hc21d22atx"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_pvmwr"]
-[ext_resource type="Texture2D" uid="uid://clua4p4gyoxif" path="res://Cards/Set A/013.png" id="2_pvmwr"]
+[ext_resource type="Texture2D" uid="uid://c0irk7mbbgsrt" path="res://Cards/Set B/013Razz.png" id="2_q3osl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
 size = Vector2(150, 210)
@@ -17,7 +17,7 @@ AdventurerHP = 3
 
 [node name="RazzSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_pvmwr")
+texture = ExtResource("2_q3osl")
 
 [node name="Area2D" type="Area2D" parent="."]
 
