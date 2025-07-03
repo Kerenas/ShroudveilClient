@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5w340n3711ja"]
+
+[ext_resource type="Texture2D" uid="uid://bfvpoef8oo01y" path="res://Cards/Set B/244Lion's_Den.png" id="1_i0xuj"]
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_t1h41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1h41"]
+size = Vector2(150, 210)
+
+[node name="Lion\'sDen" type="Node2D"]
+script = ExtResource("1_t1h41")
+CardName = "Lion's Den"
+CardDescriptionm = "When this card is flipped face-up, you may choose any number of Lions in your party. Those Lions Duel the Adventurer opposing them. Lions cost 1 bundle less to play. When a Lion enters your Party, it Duels the opposing Adventurer."
+AdventurerYield = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Lion\'sDenSprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_i0xuj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_t1h41")

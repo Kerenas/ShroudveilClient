@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuv1s18b8k8lm"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_n0obb"]
+[ext_resource type="Texture2D" uid="uid://btlrv61pvt5ld" path="res://Cards/Set B/234Catland_Crypts.png" id="2_1tg7m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wc1y5"]
+size = Vector2(150, 210)
+
+[node name="Catland Crypts" type="Node2D"]
+script = ExtResource("1_n0obb")
+CardName = "Catland Crypts"
+CardDescriptionm = "\"When this card is flipped face-up, up to 2 Adventurers may be played from your Shroud Zone to any of your empty Party Slots. *(You must pay the Bundles Cost for each card played this way.)* When a card enters the Shroud Zone, you may discard a card from your hand. If you do, draw a card and discard Catland Crypts.If a Cat in your Party would reach 0 HP, you may Dissapear it until the next End Step instead. If you do, discard Catland Crypts when that Adventurer would Reappear.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_1tg7m")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wc1y5")

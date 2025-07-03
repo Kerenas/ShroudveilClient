@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqavi0e7fth8n"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_5emw3"]
+[ext_resource type="Texture2D" uid="uid://7dfkxm4s1jn2" path="res://Cards/Set B/235Guildtown_Gates.png" id="2_nr8od"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2mab"]
+size = Vector2(150, 210)
+
+[node name="Guildtown Gates" type="Node2D"]
+script = ExtResource("1_5emw3")
+CardName = "Guildtown Gates"
+CardDescriptionm = "\"When this card is flipped face-up, each Guildmaster discards cards from their hand until the total cost of the discarded cards is at least 5 Bundles. *(You discard first.)* If either Guildmaster has no cards in their hand, they discard from the top of their deck instead.Whenever your opponent Raids, including if this card was flipped face-up because of a Raid, they must pay 5 Bundles. If they cannot, the Raid ends before any damage is dealt.If either Guildmaster recieves a Yield while their Party is on this Turf, they may look at the top card of their deck and either discard it or put it back on top of their deck.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_nr8od")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_r2mab")

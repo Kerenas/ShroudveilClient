@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvxygrh171t0t"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_f3gt0"]
+[ext_resource type="Texture2D" uid="uid://bi0of4ikky3gw" path="res://Cards/Set B/238Inversion_Field.png" id="2_xic4t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ckpkf"]
+size = Vector2(150, 210)
+
+[node name="Inversion Field" type="Node2D"]
+script = ExtResource("1_f3gt0")
+CardName = "Inversion Field"
+CardDescriptionm = "\"When this card is flipped face-up, reveal the top card of your deck. If it is an Item or Spell, you may play it without paying its Bundles Cost. If it isn't, then put it in your hand.If any effect contains any variation of \"\"top of your deck\"\" in it's wording, treat it as if it says \"\"bottom of your deck\"\", and vice versa.Once per turn, you may pay 2 Bundles to use this effect. If you do, reveal a card from either the top or bottom of your deck. If that card is an Item or Spell, you may put it in your Stash, and it costs 1 Bundles less until the end of the turn.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_xic4t")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ckpkf")
