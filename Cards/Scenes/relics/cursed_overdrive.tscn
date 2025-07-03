@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://brqh5qhx7h7y5"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xg7ec"]
+[ext_resource type="Texture2D" uid="uid://d2vofn37tnawu" path="res://Cards/Set B/225Cursed_Overdrive.png" id="2_5ruys"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icdcq"]
+size = Vector2(150, 210)
+
+[node name="Cursed Overdrive" type="Node2D"]
+script = ExtResource("1_xg7ec")
+CardName = "Cursed Overdrive"
+CardDescriptionm = "\"On each End Step, the attached Adventurer takes 3 Damage. During your turn, the attached Adventurer may use its \"\"Once during your turn\"\" effect(s) twice during your turn.\""
+CardCost = 5
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Legendary"
+AdventurerHP = 0
+IsCrowned = true
+IsAdventurer = false
+IsRelic = true
+
+[node name="225CursedOverdrive" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_5ruys")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_icdcq")

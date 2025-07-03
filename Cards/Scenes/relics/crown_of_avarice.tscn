@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bivn2r8480lld"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_dkd7b"]
+[ext_resource type="Texture2D" uid="uid://dp3puw22lac67" path="res://Cards/Set B/222Crown_of_Avarice.png" id="2_3osq0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icdcq"]
+size = Vector2(150, 210)
+
+[node name="Crown of Avarice" type="Node2D"]
+script = ExtResource("1_dkd7b")
+CardName = "Crown of Avarice"
+CardDescriptionm = "\"*Relic Requirement: Non-Boss Class Adventurer*The attached Adventurer is a Boss Class in addition to its other Classes.The Yield of the attached Adventurer is doubled. Whenever it Yields, you may draw a card.\""
+CardCost = 7
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Legendary"
+AdventurerHP = 0
+IsCrowned = true
+IsAdventurer = false
+IsRelic = true
+
+[node name="222CrownOfAvarice" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_3osq0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_icdcq")

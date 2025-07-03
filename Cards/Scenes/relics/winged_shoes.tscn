@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6jgt5nf36ltr"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_5lvtx"]
+[ext_resource type="Texture2D" uid="uid://cu3ux0ucbojbk" path="res://Cards/Set B/224Winged_Shoes.png" id="2_mqabj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icdcq"]
+size = Vector2(150, 210)
+
+[node name="Winged Shoes" type="Node2D"]
+script = ExtResource("1_5lvtx")
+CardName = "Winged Shoes"
+CardDescriptionm = "Once per turn, you may move the attached Adventurer to a different Party Slot in your Party. If another Adventurer is already in the chosen Party Slot, both Adventurers switch Party Slots."
+CardCost = 4
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Support"
+AdventurerHP = 0
+IsAdventurer = false
+IsRelic = true
+
+[node name="224WingedShoes" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_mqabj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_icdcq")

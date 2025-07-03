@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://mhpb6jx6v2h2"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_dr0cf"]
+[ext_resource type="Texture2D" uid="uid://d4hlwnkxw3ln5" path="res://Cards/Set B/231Gauntlet_of_Inspiration.png" id="2_8osak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkani"]
+size = Vector2(150, 210)
+
+[node name="Gauntlet of Inspiration" type="Node2D"]
+script = ExtResource("1_dr0cf")
+CardName = "Gauntlet of Inspiration"
+CardDescriptionm = "\"You may Dissapear the attached Adventurer at any time. If you do, that Adventurer Reappears on the next End Step. While the Attached Adventurer is Dissapeared, other Adventurers in your Party gain 3 Buff Counters.\""
+CardCost = 7
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Support"
+AdventurerHP = 0
+IsAdventurer = false
+IsRelic = true
+
+[node name="231GauntletOfInspiration" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_8osak")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_nkani")
