@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://xhv3meywa3hd"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_47kiu"]
+[ext_resource type="Texture2D" uid="uid://68f5v6e0ngyb" path="res://Cards/Set B/221Promise_Band.png" id="2_bvp1d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_joj80"]
+size = Vector2(150, 210)
+
+[node name="Promise Band" type="Node2D"]
+script = ExtResource("1_47kiu")
+CardName = "Promise Band"
+CardDescriptionm = "\"When Promise Band is attached to an Adventurer in your Party, choose an Adventurer in your opponent's Party. If either Adventurer is Defeated, the other is also Defeated.\""
+CardCost = 4
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Legendary"
+AdventurerHP = 0
+IsCrowned = true
+IsAdventurer = false
+IsRelic = true
+
+[node name="221PromiseBand" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_bvp1d")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_joj80")

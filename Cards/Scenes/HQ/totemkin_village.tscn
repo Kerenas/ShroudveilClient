@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://h4vvv6jfxjw5"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ygpm6"]
+[ext_resource type="Texture2D" uid="uid://dcd8j43gyq5t" path="res://Cards/Set B/239Totemkin_Village.png" id="2_scsk8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tch45"]
+size = Vector2(150, 210)
+
+[node name="Totemkin Village" type="Node2D"]
+script = ExtResource("1_ygpm6")
+CardName = "Totemkin Village"
+CardDescriptionm = "\"When this card is flipped face-up, switch it with one of your opponent's HQ cards. If there are none, then put this card in their HQ Zone face-up. Then, flip all face-down HQ cards face-up. Any cards flipped face-up this way activate their face-up effect, starting with any HQ's on your Turf.On the next End Step, each Adventurer gains 2 Nerf Counters. Then, discard this card. *(It goes to its Guildmaster's Shroud Zone.)*\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_scsk8")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tch45")

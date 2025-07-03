@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvqy7l1nvx4dn"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_h1fgf"]
+[ext_resource type="Texture2D" uid="uid://dwbrq8lkn4jh" path="res://Cards/Set B/242Cursed_Realm.png" id="2_mnxbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42s6h"]
+size = Vector2(150, 210)
+
+[node name="Cursed_Realm" type="Node2D"]
+script = ExtResource("1_h1fgf")
+CardName = "Cursed Realm"
+CardDescriptionm = "\"When this card is flipped face-up, distribute 4 Nerf Counters between Adventurers in play in any way you like.When an Adventurer in play gains a Nerf Counter, that Adventurer gains twice that many Nerf Counters instead.If an Adventurer in play has 6 or more Nerf Counters, it is Defeated.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_mnxbx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_42s6h")

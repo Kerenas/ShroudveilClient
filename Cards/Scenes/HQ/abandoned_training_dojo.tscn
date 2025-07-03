@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://c68e03xe08eub"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_b7atj"]
+[ext_resource type="Texture2D" uid="uid://dp1a8mvprko8d" path="res://Cards/Set B/236Abandoned_Training_Dojo.png" id="2_mu6by"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2mab"]
+size = Vector2(150, 210)
+
+[node name="Abandoned Training Dojo" type="Node2D"]
+script = ExtResource("1_b7atj")
+CardName = "Abandoned Training Dojo"
+CardDescriptionm = "\"When this card is flipped face-up, you may search your deck for up to 2 Non-LVL 1 Adventurers, reveal them, and put them into your hand. Then, shuffle your deck.Once during your turn, you may flip a coin. If heads, search your deck for an Adventurer, and put it into your hand. Then, shuffle your deck.Leveling Up your Adventurers costs 2 Bundles less.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_mu6by")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_r2mab")

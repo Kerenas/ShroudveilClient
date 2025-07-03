@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0nv1qal7so8b"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ajfhb"]
+[ext_resource type="Texture2D" uid="uid://dkiuy72iec2eg" path="res://Cards/Set B/226Fount_of_Wisdom.png" id="2_q6ydv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3oksi"]
+size = Vector2(150, 210)
+
+[node name="Fount of Wisdom" type="Node2D"]
+script = ExtResource("1_ajfhb")
+CardName = "Fount of Wisdom"
+CardDescriptionm = "Whenever the attached Adventurer is Defeated, you may draw cards until you have 7 in your hand."
+CardCost = 3
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Arcane"
+AdventurerHP = 0
+IsAdventurer = false
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_q6ydv")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_3oksi")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdpjwy4l2ea2k"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_6lo68"]
+[ext_resource type="Texture2D" uid="uid://b0dp72dyk40nv" path="res://Cards/Set B/233The_Ninelives_Emporium.png" id="2_wrgmh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6i6w"]
+size = Vector2(150, 210)
+
+[node name="The Ninelives Emporium" type="Node2D"]
+script = ExtResource("1_6lo68")
+CardName = "The Ninelives Emporium"
+CardDescriptionm = "\"When this card is flipped face-up, you gain 5 Bundles and your opponent gains 1 Bundles.Your Guild and your Adventurers gain +1 Yield. On each Guildmaster's Beginning Step, they reset their Bundles to 1 instead of 0.If any Guildmaster reaches 0 Bundles while The Ninelives Emporium is in play, they lose the game.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="233TheNinelivesEmporium" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_wrgmh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_m6i6w")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckwvb3jkfl7us"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_mphwd"]
+[ext_resource type="Texture2D" uid="uid://ddqytn1jtu8el" path="res://Cards/Set B/228Hat_of_Instant_Charisma.png" id="2_2hihu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmg3q"]
+size = Vector2(150, 210)
+
+[node name="Hat Of Instant Charisma" type="Node2D"]
+script = ExtResource("1_mphwd")
+CardName = "Hat of Instant Charisma"
+CardDescriptionm = "Whenever the attached Adventurer Defeats an Adventurer, you may look at the top 7 cards of your deck, reveal an Adventurer you find there, and put it into your hand. Shuffle the other cards back into your deck."
+CardCost = 2
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Arcane"
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="228HatOfInstantCharisma" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_2hihu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_pmg3q")

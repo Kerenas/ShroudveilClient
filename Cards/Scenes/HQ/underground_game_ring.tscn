@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvn7q2pweupyu"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_d2g7e"]
+[ext_resource type="Texture2D" uid="uid://c2ysec5cklqa1" path="res://Cards/Set B/237Underground_Game_Ring.png" id="2_l4il1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2mab"]
+size = Vector2(150, 210)
+
+[node name="Underground Game Ring" type="Node2D"]
+script = ExtResource("1_d2g7e")
+CardName = "Underground Game Ring"
+CardDescriptionm = "\"When this card is flipped face-up, each Guildmaster reveals a card from their hand. If they cannot, they reveal the top card of their library instead.When a card is Revealed by an effect, give 1 Buff Counter to an Adventurer in play. You may not put any more Nerf Counters on Adventurers in your opponent's Party.\""
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_l4il1")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_r2mab")

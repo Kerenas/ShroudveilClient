@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1vbqhm6lpdk5"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_kvarc"]
+[ext_resource type="Texture2D" uid="uid://5w17ig43fd6s" path="res://Cards/Set B/230Demise.png" id="2_6lddc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkani"]
+size = Vector2(150, 210)
+
+[node name="Demise" type="Node2D"]
+script = ExtResource("1_kvarc")
+CardName = "Demise"
+CardDescriptionm = "\"The attached Adventurer has +10 ATK. During your End Step, that Adventurer takes 5 Damage.Whenever Demise would be discarded, flip a coin. If heads, attach it to an Adventurer in your Party. If Tails, your opponent may pay Demise's Bundles cost and attach it to an Adventurer in their party. If they do not, Demise is discarded.\""
+CardCost = 10
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Legendary"
+IsCrowned = true
+IsAdventurer = false
+IsHQ = true
+
+[node name="230Demise" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_6lddc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_nkani")

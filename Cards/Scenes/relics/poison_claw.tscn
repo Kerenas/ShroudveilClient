@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwbe6v6hj5f3l"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xwfgn"]
+[ext_resource type="Texture2D" uid="uid://bwh1kuhu0gu5n" path="res://Cards/Set B/227Poison_Claw.png" id="2_qs3ed"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpuvw"]
+size = Vector2(150, 210)
+
+[node name="Poison Claw" type="Node2D"]
+script = ExtResource("1_xwfgn")
+CardName = "Poison Claw"
+CardDescriptionm = "When the attached Adventurer would deal damage, instead it deals Nerf Counters equal to its ATK."
+CardCost = 4
+AdventurerYield = 0
+AdventurerLvl = 0
+CardType = "Relic"
+AdventurerType = "Arcane"
+AdventurerHP = 0
+IsAdventurer = false
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qs3ed")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tpuvw")
