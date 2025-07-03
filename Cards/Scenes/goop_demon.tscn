@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://knikbkka2spo"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_1blid"]
+[ext_resource type="Texture2D" uid="uid://j0usnavvoi6r" path="res://Cards/Set A/010.png" id="2_1blid"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="GoopDemon" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_1blid")
+CardName = "Goop Demon"
+CardDescriptionm = "Once during your turn, you may choose 1: • Search your deck for a LVL 1 Monster Adventurer and put it in an empty Party Slot. Then, shuffle your deck. • Search your deck for a LVL 2 Monster Adventurer, reveal it, and put it into your hand, then shuffle your deck. If you do, this Goop Demon is Defeated. You may not choose this on the same turn Goop Demon entered the Party."
+CardImage = NodePath("GoopDemonSprite")
+CardType = "Monster"
+AdventurerType = "Support"
+
+[node name="GoopDemonSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_1blid")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

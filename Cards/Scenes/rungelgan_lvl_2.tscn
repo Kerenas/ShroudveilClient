@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://w12ikp750mvc"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_nc71e"]
+[ext_resource type="Texture2D" uid="uid://dfw3s54i056no" path="res://Cards/Set A/019.png" id="2_nc71e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="RungelganLvl2" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_nc71e")
+CardName = "Rungelgan"
+CardDescriptionm = "When you Fortify this card, your opponent discards 1 card from the top of their deck. If there are at least 2 Monsters in your Party, your opponent discards 2 more cards from the top of their deck."
+CardCost = 3
+AdventurerYield = 4
+CardImage = NodePath("RungelganLvl2Sprite")
+AdventurerLvl = 2
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 2
+AdventurerHP = 7
+
+[node name="RungelganLvl2Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_nc71e")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

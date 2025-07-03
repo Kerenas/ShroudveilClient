@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://3nsbm6u0yxel"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_5iev0"]
+[ext_resource type="Texture2D" uid="uid://c0n0pyys33nbt" path="res://Cards/Set A/008.png" id="2_5iev0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="MapleTheExiled" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_5iev0")
+CardName = "Maple, the Exiled"
+CardDescriptionm = "**Bell Bearer, Prodigy** *(This card can be played into an empty Party Slot as if it were a LVL 1 Adventurer.)* Once during your turn, you may heal 3 Lingering Damage from a Precursor in your Party."
+CardCost = 6
+AdventurerYield = 5
+CardImage = NodePath("MapleTheExiledSprite")
+AdventurerLvl = 3
+CardType = "Precursor"
+AdventurerType = "Support"
+AdventurerAttack = 7
+AdventurerHP = 9
+IsCrowned = true
+
+[node name="MapleTheExiledSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_5iev0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

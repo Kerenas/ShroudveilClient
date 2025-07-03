@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8bkaenbol3vy"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_8yo0p"]
+[ext_resource type="Texture2D" uid="uid://ds3md7nb8uqpx" path="res://Cards/Set A/011.png" id="2_8yo0p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="NineLivesClerk" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_8yo0p")
+CardName = "NineLives Clerk"
+CardDescriptionm = "Once during your turn, you may choose 1: • Pay 2 Bundles. Draw a Card. • Discard a card from your hand. Yield 2 Bundles."
+CardImage = NodePath("NineLivesClerkSprite")
+CardType = "Cat"
+AdventurerType = "Support"
+AdventurerAttack = 2
+AdventurerHP = 5
+
+[node name="NineLivesClerkSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_8yo0p")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

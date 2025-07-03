@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxdv0b3fh34is"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_6qoun"]
+[ext_resource type="Texture2D" uid="uid://iie1ud6580i1" path="res://Cards/Set A/005.png" id="2_6qoun"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="JuniperSpoonWeilder" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_6qoun")
+CardName = "Juniper, Spoon Weilder"
+CardDescriptionm = "*Juniper, Spoon Weilder takes half damage from Lions and Farkitts.* When Juniper, Spoon Wielder enters the Party, you may search your deck for an Item or Relic card, reveal it, and put it in your hand. If you do, shuffle your deck. If Scramble, the Soothed shares a Party with Juniper, Spoon Wielder, the two may swap Party Slots once per turn."
+CardCost = 8
+AdventurerYield = 6
+CardImage = NodePath("JuniperSpoonWeilderSprite")
+AdventurerLvl = 3
+CardType = "Cat"
+AdventurerType = "Warrior"
+AdventurerAttack = 6
+AdventurerHP = 20
+IsCrowned = true
+
+[node name="JuniperSpoonWeilderSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_6qoun")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

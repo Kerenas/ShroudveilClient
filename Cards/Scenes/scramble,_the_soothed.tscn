@@ -18,6 +18,7 @@ CardType = "Farkitt"
 AdventurerType = "Support"
 AdventurerAttack = 8
 AdventurerHP = 10
+IsCrowned = true
 
 [node name="ScrambleSoothedSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)

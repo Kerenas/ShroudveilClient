@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://br61nt3tmsqxt"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_8pbsj"]
+[ext_resource type="Texture2D" uid="uid://da33vbg8i0w4n" path="res://Cards/Set A/009.png" id="2_8pbsj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="ThePridemaster" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_8pbsj")
+CardName = "The Pridemaster"
+CardDescriptionm = "**Beatdown, Prodigy** *(Choose an Adventurer Archetype. This card deals 2x damage and takes half damage from that type, rounded up.)* *(This card can be played into an empty Party Slot as if it were a LVL 1 Adventurer.)* Monsters and Lions in your Party gain +4 ATK. Whenever a Lion or Monster in your Party is Defeated, The Pridemaster gains +1 HP."
+CardCost = 10
+AdventurerYield = 1
+CardImage = NodePath("ThePridemasterSprite")
+AdventurerLvl = 3
+CardType = "Lion"
+AdventurerType = "Boss"
+AdventurerAttack = 10
+AdventurerHP = 18
+IsCrowned = true
+
+[node name="ThePridemasterSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_8pbsj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://btivx00x1vmri"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_cxm40"]
+[ext_resource type="Texture2D" uid="uid://btav1odohsdga" path="res://Cards/Set A/004.png" id="2_cxm40"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="JuniperLvl2" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_cxm40")
+CardName = "Juniper"
+CardDescriptionm = "When Juniper enters the Party, you may search your deck for an Adventurer with \"Scramble\" in its name. If you do, reveal it, and put it into your hand. Then, shuffle your deck. When an Adventurer with \"Scramble\" in its name enters the Party, Juniper gains 1 Buff Counter."
+CardCost = 6
+AdventurerYield = 4
+CardImage = NodePath("JuniperLvl2Sprite")
+AdventurerLvl = 2
+CardType = "Cat"
+AdventurerType = "Warrior"
+AdventurerAttack = 3
+AdventurerHP = 14
+
+[node name="JuniperLvl2Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_cxm40")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")
