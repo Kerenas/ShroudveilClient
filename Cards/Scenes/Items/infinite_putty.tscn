@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmynlr1y0e2t3"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_a2vmt"]
+[ext_resource type="Texture2D" uid="uid://3le8albqtmmj" path="res://Cards/Set B/187Infinite_Putty.png" id="2_2yx8k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_67t2w"]
+size = Vector2(150, 210)
+
+[node name="Infinite Putty" type="Node2D"]
+script = ExtResource("1_a2vmt")
+CardName = "Infinite Putty"
+CardDescriptionm = "\"Put an Item from any Guildmaster's Shroud Zone on top of their deck. When you play this card, you may choose an Item in any Stash and use that card's effect as this card's effect instead. *(You must pay that card's Bundles Cost if you do.)*\""
+CardCost = 1
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_2yx8k")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_67t2w")

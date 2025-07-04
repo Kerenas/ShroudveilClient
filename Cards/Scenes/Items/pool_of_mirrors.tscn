@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://clkgwgatomcxj"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_gx3bf"]
+[ext_resource type="Texture2D" uid="uid://dh1jxcjitfnnu" path="res://Cards/Set B/195Pool_of_Mirrors.png" id="2_5dwtp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_be1wi"]
+size = Vector2(150, 210)
+
+[node name="Pool of Mirrors" type="Node2D"]
+script = ExtResource("1_gx3bf")
+CardName = "Pool of Mirrors"
+CardDescriptionm = "\"Look at the top 3 cards of your deck. Then, choose 1:• Place them on top of your deck in any order.• Shuffle them and place them on the bottom of your deck.\""
+CardCost = 3
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_5dwtp")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_be1wi")

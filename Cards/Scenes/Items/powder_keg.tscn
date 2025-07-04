@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw2drowcf5ft"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_s0sgw"]
+[ext_resource type="Texture2D" uid="uid://byd5fl8ibmg2r" path="res://Cards/Set B/174Powder_Keg.png" id="2_msyhi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hj8l6"]
+size = Vector2(150, 210)
+
+[node name="Powder Keg" type="Node2D"]
+script = ExtResource("1_s0sgw")
+CardName = "Powder Keg"
+CardDescriptionm = "\"This card may be played only from your Stash. When Powder Keg enters your Stash, pay 1 Bundles.If you play Powder Keg, or if it is discarded from your Stash from a card effect, flip a coin. If heads, deal 3 damage to target Adventurer\""
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_msyhi")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_hj8l6")

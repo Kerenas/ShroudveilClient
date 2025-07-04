@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkc4xoguye7t1"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_iu30n"]
+[ext_resource type="Texture2D" uid="uid://buh12kq61lknq" path="res://Cards/Set B/190Respawn_Flag.png" id="2_8f4fo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_io2rd"]
+size = Vector2(150, 210)
+
+[node name="Respawn Flag" type="Node2D"]
+script = ExtResource("1_iu30n")
+CardName = "Respawn Flag"
+CardDescriptionm = "\"Choose 1:• Put an Adventurer from your Shroud Zone into your hand.• Draw a card.\""
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_8f4fo")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_io2rd")

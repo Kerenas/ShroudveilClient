@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce64oesqtfo7t"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_e1y5q"]
+[ext_resource type="Texture2D" uid="uid://doxp38lsjhosi" path="res://Cards/Set B/180Pumpkin_Latte.png" id="2_d11my"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8kty5"]
+size = Vector2(150, 210)
+
+[node name="Pumpkin Latte" type="Node2D"]
+script = ExtResource("1_e1y5q")
+CardName = "Pumpkin Latte"
+CardDescriptionm = "Place a Buff Counter on a Cat or Fox in play. If that Adventurer has already gained a Buff counter this turn, draw a card."
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_d11my")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8kty5")

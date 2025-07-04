@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpci6qibbbe63"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_qcue1"]
+[ext_resource type="Texture2D" uid="uid://d346fvkgingb8" path="res://Cards/Set B/193Binoculars.png" id="2_673fn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nccov"]
+size = Vector2(150, 210)
+
+[node name="Binoculars" type="Node2D"]
+script = ExtResource("1_qcue1")
+CardName = "Binoculars"
+CardDescriptionm = "Flip an opponent's face down HQ card face-up. *(HQ Effects take place instantly and cannot be interrupted)*"
+CardCost = 3
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_673fn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_nccov")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://lrg0cdbuakfg"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_23lx0"]
+[ext_resource type="Texture2D" uid="uid://bw506pxt80e3" path="res://Cards/Set B/176Armistice_Agreement.png" id="2_pvrtj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgcui"]
+size = Vector2(150, 210)
+
+[node name="Armistice Agreement" type="Node2D"]
+script = ExtResource("1_23lx0")
+CardName = "Armistice Agreement"
+CardDescriptionm = "\"You may play this card only on your opponent's turn.Prevent all damage that would be dealt until your next Beginning Step, Each Guildmaster removes 1 Guild Damage.\""
+CardCost = 5
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_pvrtj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_dgcui")

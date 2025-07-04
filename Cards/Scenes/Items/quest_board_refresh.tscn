@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw8llqe5ym01w"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_cmfw6"]
+[ext_resource type="Texture2D" uid="uid://bkpkf1egmspc8" path="res://Cards/Set B/188Quest_Board_Refresh.png" id="2_fn5y5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_67t2w"]
+size = Vector2(150, 210)
+
+[node name="Quest Board Refresh" type="Node2D"]
+script = ExtResource("1_cmfw6")
+CardName = "Quest Board Refresh"
+CardDescriptionm = "Search your deck for up to 3 LVL 1 Adventurers with different names, reveal them, and put them into your hand. Then, shuffle your deck."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_fn5y5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_67t2w")

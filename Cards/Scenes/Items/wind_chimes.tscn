@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd7hl2dyl0yv8"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_q1n3x"]
+[ext_resource type="Texture2D" uid="uid://d1ic2kinlggte" path="res://Cards/Set B/181Wind_Chimes.png" id="2_axfxe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mfm0i"]
+size = Vector2(150, 210)
+
+[node name="Wind Chimes" type="Node2D"]
+script = ExtResource("1_q1n3x")
+CardName = "Wind Chimes"
+CardDescriptionm = "\"Place a Buff Counter on a Farkitt in play. Then, place a Nerf Counter on an Adventurer in play.Each Guildmaster who has had an Adventurer in their Party receive a Buff or Nerf Counter this turn draws a card.\""
+CardCost = 3
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_axfxe")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_mfm0i")

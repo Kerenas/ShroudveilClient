@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://vp5do5bem0ql"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_56ydv"]
+[ext_resource type="Texture2D" uid="uid://ca0st0wm0hvgs" path="res://Cards/Set B/182Lashing_Whip.png" id="2_qg0kf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mfm0i"]
+size = Vector2(150, 210)
+
+[node name="Lashing Whip" type="Node2D"]
+script = ExtResource("1_56ydv")
+CardName = "Lashing Whip"
+CardDescriptionm = "Target Monster or Entity Adventurer in your Party gains +2 ATK until the end of turn. Its Guildmaster discards the top card of their deck."
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qg0kf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_mfm0i")

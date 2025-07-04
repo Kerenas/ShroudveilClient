@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://chi8tof5uxbuv"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_m1ry7"]
+[ext_resource type="Texture2D" uid="uid://c1p2yxy6snw7e" path="res://Cards/Set B/194Hair_Tie.png" id="2_flmke"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmdgg"]
+size = Vector2(150, 210)
+
+[node name="Hair Tie" type="Node2D"]
+script = ExtResource("1_m1ry7")
+CardName = "Hair Tie"
+CardDescriptionm = "Until the next End Step, target Support Adventurer takes 3 less damage from one source."
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_flmke")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fmdgg")

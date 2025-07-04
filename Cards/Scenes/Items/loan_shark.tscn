@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc2xurvx3b443"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_r12pl"]
+[ext_resource type="Texture2D" uid="uid://bofy1d4cjfq45" path="res://Cards/Set B/173Loan_Shark.png" id="2_gt3hh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybtih"]
+size = Vector2(150, 210)
+
+[node name="Loan Shark" type="Node2D"]
+script = ExtResource("1_r12pl")
+CardName = "Loan Shark"
+CardDescriptionm = "\"Loan Shark may be played only to your Stash and cannot leave unless it is discarded.When this card is put into your Stash, pay up to 10 Bundles. On your Beginning Step, put a counter onto Loan Shark.When Loan Shark has 3 counters, Yield 3 times the number of Bundles paid when it was put into your Stash. Then, discard this card from your Stash.\""
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_gt3hh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ybtih")

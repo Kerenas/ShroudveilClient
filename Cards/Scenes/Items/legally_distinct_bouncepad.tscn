@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtome7na5ebru"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_6j13p"]
+[ext_resource type="Texture2D" uid="uid://1iu5icgehtk7" path="res://Cards/Set B/196Legally_Distinct_Bouncepad.png" id="2_25b64"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fb3v5"]
+size = Vector2(150, 210)
+
+[node name="Legally Distinct Bouncepad" type="Node2D"]
+script = ExtResource("1_6j13p")
+CardName = "Legally Distinct Bouncepad"
+CardDescriptionm = "Put 2 Buff Counters on an Adventurer in play. At the beginning of the next Step, put 4 Nerf Counters on that Adventurer."
+CardCost = 3
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_25b64")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fb3v5")

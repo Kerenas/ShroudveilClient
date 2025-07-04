@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://l7e311jgexps"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_8w4g8"]
+[ext_resource type="Texture2D" uid="uid://d0kwu0fhty61u" path="res://Cards/Set B/177Orb_of_Visions.png" id="2_stpbk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgcui"]
+size = Vector2(150, 210)
+
+[node name="Orb of Visions" type="Node2D"]
+script = ExtResource("1_8w4g8")
+CardName = "Orb of Visions"
+CardDescriptionm = "Look at the top 3 cards of your deck, put one of them into your hand, and the others back on top in any order."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_stpbk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_dgcui")
