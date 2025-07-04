@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjhy0uwea680l"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_2xy37"]
+[ext_resource type="Texture2D" uid="uid://b3thxt0b683qd" path="res://Cards/Set B/164Samuel.png" id="2_25boy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_550tv"]
+size = Vector2(150, 210)
+
+[node name="Samuel" type="Node2D"]
+script = ExtResource("1_2xy37")
+CardName = "Samuel"
+CardDescriptionm = "\"**Prodigy** *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer.)*During your Draw Step, if you have a face-up HQ in your HQ Zone, each Adventurer in your Party Yields +1 Bundles.\""
+CardCost = 7
+AdventurerYield = 5
+AdventurerLvl = 3
+CardType = "Lion"
+AdventurerType = "Arcane"
+AdventurerAttack = 15
+AdventurerHP = 6
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_25boy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_550tv")

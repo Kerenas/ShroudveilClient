@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf8s3rcslc3si"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_w0e3q"]
+[ext_resource type="Texture2D" uid="uid://cmusg8rt0mxdy" path="res://Cards/Set B/159Rye.png" id="2_7k6ls"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wlmyv"]
+size = Vector2(150, 210)
+
+[node name="Rye Lvl 2" type="Node2D"]
+script = ExtResource("1_w0e3q")
+CardName = "Rye Lvl 2"
+CardDescriptionm = "\"Once during your turn, you may pay 3 Bundles. If you do, your opponent reveals their hand. Then, you may discard an Item you find there or from your opponent's Stash.\""
+CardCost = 5
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Cat"
+AdventurerType = "Arcane"
+AdventurerAttack = 10
+AdventurerHP = 7
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_7k6ls")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wlmyv")

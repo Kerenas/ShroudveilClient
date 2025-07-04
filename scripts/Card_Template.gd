@@ -29,6 +29,7 @@ class_name Card extends Node2D
 @export var PlusAttackValue: int
 @export var IsPlusHP: bool
 @export var PlusHPValue: int
+@export var IsProdigy: bool
 
 
 signal hovered

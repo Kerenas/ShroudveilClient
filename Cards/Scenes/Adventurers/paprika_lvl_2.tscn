@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk61btk76k38h"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_khebt"]
+[ext_resource type="Texture2D" uid="uid://cyimmpv1hp1hw" path="res://Cards/Set B/169Paprika.png" id="2_8b3nk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s41tp"]
+size = Vector2(150, 210)
+
+[node name="Paprika Lvl 2" type="Node2D"]
+script = ExtResource("1_khebt")
+CardName = "Paprika Lvl 2"
+CardDescriptionm = "During your turn, if Paprika deals Guild Damage, it takes 5 less damage from your opponent's Adventurers during your opponent's next turn. This effect does not stack. "
+CardCost = 4
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Cat"
+AdventurerType = "Warrior"
+AdventurerAttack = 3
+AdventurerHP = 10
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_8b3nk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_s41tp")

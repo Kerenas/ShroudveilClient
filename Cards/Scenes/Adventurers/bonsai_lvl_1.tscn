@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdmf5wyol210k"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_skca8"]
+[ext_resource type="Texture2D" uid="uid://bjhjmfcfa4mam" path="res://Cards/Set B/166Bonsai.png" id="2_0un2q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdwy2"]
+size = Vector2(150, 210)
+
+[node name="Bonsai Lvl 1" type="Node2D"]
+script = ExtResource("1_skca8")
+CardName = "Bonsai Lvl 1"
+AdventurerYield = 2
+CardType = "Fox"
+AdventurerType = "Arcane"
+AdventurerAttack = 4
+AdventurerHP = 2
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0un2q")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_rdwy2")

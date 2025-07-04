@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://k068ycy83cls"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_lb55k"]
+[ext_resource type="Texture2D" uid="uid://c2t27iegyybdg" path="res://Cards/Set B/165Lizzy,_Tamer_of_Monsters.png" id="2_338k6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8unlv"]
+size = Vector2(150, 210)
+
+[node name="Lizzy, Tamer of Monsters" type="Node2D"]
+script = ExtResource("1_lb55k")
+CardName = "Lizzy, Tamer of Monsters"
+CardDescriptionm = "\"**Prodigy** *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer.)*During your turn, whenever you play Lashing Whip, you may draw 2 cards.Monsters in your Party gain +3 ATK\""
+CardCost = 9
+AdventurerYield = 5
+AdventurerLvl = 3
+CardType = "Lion"
+AdventurerType = "Support"
+AdventurerAttack = 9
+IsCrowned = true
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_338k6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8unlv")

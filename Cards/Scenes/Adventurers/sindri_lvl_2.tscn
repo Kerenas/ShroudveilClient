@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://buto2eedgfrvh"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_svh4u"]
+[ext_resource type="Texture2D" uid="uid://q0paiwa5tbch" path="res://Cards/Set B/162Sindri.png" id="2_dp20l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1r1b"]
+size = Vector2(150, 210)
+
+[node name="Sindri Lvl 2" type="Node2D"]
+script = ExtResource("1_svh4u")
+CardName = "Sindri Lvl 2"
+CardDescriptionm = "Other Dragons in your Party have +3 ATK."
+CardCost = 4
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Dragon"
+AdventurerType = "Warrior"
+AdventurerAttack = 2
+AdventurerHP = 12
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_dp20l")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_t1r1b")
