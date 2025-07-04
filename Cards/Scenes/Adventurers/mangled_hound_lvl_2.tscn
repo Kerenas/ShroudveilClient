@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://drv8g388sfxtf"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ut1s4"]
+[ext_resource type="Texture2D" uid="uid://oqs0g80ewvfs" path="res://Cards/Set B/171Mangled_Hound.png" id="2_3kwdg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qijlp"]
+size = Vector2(150, 210)
+
+[node name="Mangled Hound Lvl 2" type="Node2D"]
+script = ExtResource("1_ut1s4")
+CardName = "Mangled Hound"
+CardDescriptionm = "When Mangled Hound deals damage to an Adventurer, on the next Beginning Step, that Adventurer takes 3 damage. This effect does not stack."
+CardCost = 4
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 5
+AdventurerHP = 7
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_3kwdg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qijlp")

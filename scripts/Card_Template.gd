@@ -25,6 +25,10 @@ class_name Card extends Node2D
 @export var IsXAttack: bool = false
 @export var XCostValue: int = 0
 @export var XAttackValue: int = 0
+@export var IsPlusAttack: bool
+@export var PlusAttackValue: int
+@export var IsPlusHP: bool
+@export var PlusHPValue: int
 
 
 signal hovered

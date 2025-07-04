@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://doem8uj81aw5t"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_sqpf0"]
+[ext_resource type="Texture2D" uid="uid://ltw850r7wh1" path="res://Cards/Set B/170Mangled_Hound.png" id="2_4at5r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s41tp"]
+size = Vector2(150, 210)
+
+[node name="Mangled Hound Lvl 1" type="Node2D"]
+script = ExtResource("1_sqpf0")
+CardName = "Mangled Hound"
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 3
+AdventurerHP = 3
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_4at5r")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_s41tp")
