@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://fhskiexeahly"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_6y43m"]
+[ext_resource type="Texture2D" uid="uid://d0t44t3dxj7mu" path="res://Cards/Set B/204Routine_Maintenance.png" id="2_bcmtd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jke8y"]
+size = Vector2(150, 210)
+
+[node name="Routine Maintenance" type="Node2D"]
+script = ExtResource("1_6y43m")
+CardName = "Routine Maintenance"
+CardDescriptionm = "\"Turn your face-up HQ Card face-down.If Routine Maintenance is played from The Stash on your opponent's turn, you may put an HQ card from your Shroud Zone into your hand.\""
+CardCost = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_bcmtd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_jke8y")

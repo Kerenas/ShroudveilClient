@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbdecwexnc6pn"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_dpqbf"]
+[ext_resource type="Texture2D" uid="uid://b2di1r8te5cqw" path="res://Cards/Set B/199Poke_the_Bear.png" id="2_bej54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71sty"]
+size = Vector2(150, 210)
+
+[node name="Poke the Bear" type="Node2D"]
+script = ExtResource("1_dpqbf")
+CardName = "Poke the Bear"
+CardDescriptionm = "Deal 2 Damage to each Adventurer that has a Nerf Counter on it."
+CardCost = 3
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_bej54")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_71sty")

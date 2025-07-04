@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://di7bgnuxd85ah"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_g6x3o"]
+[ext_resource type="Texture2D" uid="uid://gtbcphg41huo" path="res://Cards/Set B/213Lucky_Number_7.png" id="2_g6x3o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0oclx"]
+size = Vector2(150, 210)
+
+[node name="Lucky Number 7" type="Node2D"]
+script = ExtResource("1_g6x3o")
+CardName = "Lucky Number 7"
+CardDescriptionm = "Discard 7 cards from your hand. Then, draw 7 cards. *(If you don't have at least 7 cards in your hand when you play this card, you cannot play this card.)*"
+CardCost = 7
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_g6x3o")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_0oclx")

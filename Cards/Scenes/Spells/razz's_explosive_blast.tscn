@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxrtl40qd8d3x"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_fpsfe"]
+[ext_resource type="Texture2D" uid="uid://cljsghiw3012o" path="res://Cards/Set B/218Razz's_Explosive_Blast.png" id="2_yiqp8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afdb0"]
+size = Vector2(150, 210)
+
+[node name="Razz\'s Explosive Blast" type="Node2D"]
+script = ExtResource("1_fpsfe")
+CardName = "Razz's Explosive Blast"
+CardDescriptionm = "\"When you play Razz's Explosive Blast, you may play an additional Razz's Explosive Blast from your Shroud Zone at the same time. *(You must pay for each card played this way.)*Deal 1 damage to 3 target Adventurers in play.\""
+CardCost = 2
+IsAdventurer = false
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_yiqp8")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_afdb0")

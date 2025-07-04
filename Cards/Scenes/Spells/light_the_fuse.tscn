@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm0gspihkx38l"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_pwfk2"]
+[ext_resource type="Texture2D" uid="uid://cdf8tme4uiyua" path="res://Cards/Set B/209Light_the_Fuse.png" id="2_scodj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbc8l"]
+size = Vector2(150, 210)
+
+[node name="Light the Fuse" type="Node2D"]
+script = ExtResource("1_pwfk2")
+CardName = "Light the Fuse"
+CardDescriptionm = "\"Distribute a total of 5 damage between two target Adventurers in any way you like. If one of those Adventurers is a Warrior, for each damage distributed to it, it takes twice that much damage instead. For every Powder Keg in your Stash, deal an additional 2 damage to each target. Then, Discard all Powder Keg cards from your Stash.\""
+CardCost = 6
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_scodj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_hbc8l")

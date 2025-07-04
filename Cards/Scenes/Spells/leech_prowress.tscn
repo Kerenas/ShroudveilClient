@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://x8nbxq4cqfjj"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_1tkko"]
+[ext_resource type="Texture2D" uid="uid://bpjj33t6y0bu1" path="res://Cards/Set B/220Leech_Prowress.png" id="2_0l1bh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="Leech Prowress" type="Node2D"]
+script = ExtResource("1_1tkko")
+CardName = "Leech Prowress"
+CardDescriptionm = "Remove up to 3 Buff Counters from an Adventurer in play. For each Buff Counter removed this way, place 1 Buff Counter on an Adventurer in your Party."
+CardCost = 5
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0l1bh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

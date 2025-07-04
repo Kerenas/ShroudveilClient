@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://wjx7f4f1k45k"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_06l71"]
+[ext_resource type="Texture2D" uid="uid://ba0esd4c1bq4c" path="res://Cards/Set B/219Forbidden_Rite.png" id="2_kc0ef"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="Forbidden Rite" type="Node2D"]
+script = ExtResource("1_06l71")
+CardName = "Forbidden Rite"
+CardDescriptionm = "\"Target Arcane Adventurer in your Party is Defeated. Search your deck for an Adventurer with the same LVL as the target Adventurer and put it into one of your empty Party Slots, then shuffle your deck.\""
+CardCost = 4
+AdventurerYield = 0
+AdventurerLvl = 0
+AdventurerHP = 0
+IsAdventurer = false
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_kc0ef")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

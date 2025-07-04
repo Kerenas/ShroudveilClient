@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://4i0ogh5dmhnn"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_qi4k1"]
+[ext_resource type="Texture2D" uid="uid://bk4v4b27g6x4i" path="res://Cards/Set B/207Ward_Practice.png" id="2_bf1r7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umvs5"]
+size = Vector2(150, 210)
+
+[node name="Ward Practice" type="Node2D"]
+script = ExtResource("1_qi4k1")
+CardName = "Ward Practice"
+CardDescriptionm = "Place a Ward Counter on each Adventurer in your Party. These break during your next Adventuring Step."
+CardCost = 5
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_bf1r7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_umvs5")

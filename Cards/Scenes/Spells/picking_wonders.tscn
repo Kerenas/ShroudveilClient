@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvjhbiou43x3q"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_j3g5p"]
+[ext_resource type="Texture2D" uid="uid://cdwg0n50td0yc" path="res://Cards/Set B/200Picking_Wonders.png" id="2_m3r64"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aj5uq"]
+size = Vector2(150, 210)
+
+[node name="Picking Wonders" type="Node2D"]
+script = ExtResource("1_j3g5p")
+CardName = "Picking Wonders"
+CardDescriptionm = "Search your deck for 5 cards, shuffle them, and place them face down in a pile. Reveal one of them and put it into your hand. Then, shuffle your deck and put the other cards on the bottom of your deck."
+CardCost = 3
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_m3r64")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_aj5uq")

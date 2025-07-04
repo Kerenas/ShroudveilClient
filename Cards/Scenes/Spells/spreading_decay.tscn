@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddopcsl5usfni"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_acxjo"]
+[ext_resource type="Texture2D" uid="uid://cluocdirdh2kb" path="res://Cards/Set B/217Spreading_Decay.png" id="2_ug8vo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ef4mq"]
+size = Vector2(150, 210)
+
+[node name="Spreading Decay" type="Node2D"]
+script = ExtResource("1_acxjo")
+CardName = "Spreading Decay"
+CardDescriptionm = "Distribute X Nerf Counters from Adventurers in your Party to Adventurers in your opponent's Party in any way you like."
+IsAdventurer = false
+IsSpell = true
+IsXCost = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ug8vo")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ef4mq")

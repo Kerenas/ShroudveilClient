@@ -3,15 +3,15 @@ class_name Card extends Node2D
 @export var CardName: String
 @export var CardDescriptionm: String
 @export var CardCost: int = 0
-@export var AdventurerYield: int = 2
+@export var AdventurerYield: int = 0
 @export var CardImage: Node2D
-@export var AdventurerLvl: int = 1
+@export var AdventurerLvl: int = 0
 @export var CardType: String
 @export var AdventurerType: String
 @export var AdventurerAttack: int = 0
-@export var AdventurerHP: int = 4
+@export var AdventurerHP: int = 0
 @export var IsCrowned: bool = false
-@export var IsAdventurer: bool = true
+@export var IsAdventurer: bool = false
 @export var IsHQ: bool = false
 @export var IsRelic: bool = false
 @export var IsItem: bool = false
@@ -21,10 +21,10 @@ class_name Card extends Node2D
 @export var IsInDuel: bool = false
 @export var InRaid: bool = false
 @export var IsWarded: bool = false
-@export var IsXAttack: bool = false 
-@export var XAttackValue:int = 0 
 @export var IsXCost: bool = false
-@export var XCostPaid:int = 0
+@export var IsXAttack: bool = false
+@export var XCostValue: int = 0
+@export var XAttackValue: int = 0
 
 
 signal hovered

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bissqo8kd76mg"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_dy6q7"]
+[ext_resource type="Texture2D" uid="uid://drd7ebal1f58" path="res://Cards/Set B/206Grand_Opening.png" id="2_6ib00"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ws385"]
+size = Vector2(150, 210)
+
+[node name="Grand Opening" type="Node2D"]
+script = ExtResource("1_dy6q7")
+CardName = "Grand Opening"
+CardDescriptionm = "Turn your face-down HQ Card face-up. If your HQ Card is already face-up, then discard it. *(HQ Effects take place instantly and cannot be interrupted)*"
+CardCost = 5
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_6ib00")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ws385")

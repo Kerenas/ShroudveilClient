@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm8rkb06hulo4"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_bkx3e"]
+[ext_resource type="Texture2D" uid="uid://cat1c0v47chst" path="res://Cards/Set B/214The_Jenkins_Effect.png" id="2_v5mwy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orm5b"]
+size = Vector2(150, 210)
+
+[node name="The Jenkins Effect" type="Node2D"]
+script = ExtResource("1_bkx3e")
+CardName = "The Jenkins Effect"
+CardDescriptionm = "\"Each Adventurer Duels the Adventurer opposing them. Yields from Adventurers during this Duel are doubled. Your opponent may play cards from their hand until the end of the turn. At the end of this turn, you lose the game.\""
+CardCost = 8
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_v5mwy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_orm5b")

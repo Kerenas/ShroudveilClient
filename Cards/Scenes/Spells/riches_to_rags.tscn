@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx8cu45bmmwr3"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_lpfjy"]
+[ext_resource type="Texture2D" uid="uid://wafe3c53k7nf" path="res://Cards/Set B/202Riches_to_Rags.png" id="2_478pf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k1jda"]
+size = Vector2(150, 210)
+
+[node name="Riches to Rags" type="Node2D"]
+script = ExtResource("1_lpfjy")
+CardName = "Riches to Rags"
+CardDescriptionm = "\"You may play this card only on your turn, and only if your Bundles total would be 0 after paying for this card.Draw 2 cards for each empty Party Slot in your Party. Your turn ends.\""
+CardCost = 3
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_478pf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_k1jda")

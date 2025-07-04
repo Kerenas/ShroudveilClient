@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://drjcsprcqjcyf"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_3vp8v"]
+[ext_resource type="Texture2D" uid="uid://dbyxtpj6laql4" path="res://Cards/Set B/212Swift_Ambush.png" id="2_wlion"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d05tx"]
+size = Vector2(150, 210)
+
+[node name="Swift Ambush" type="Node2D"]
+script = ExtResource("1_3vp8v")
+CardName = "Swift Ambush"
+CardDescriptionm = "\"You may play this card only when an Adventurer would Disappear.The Adventurer that would Disappear Duels the opposing Adventurer.If it Defeats the opposing Adventurer in the Duel, remove 3 Lingering Damage from it and shuffle Swift Ambush back into your deck.\""
+CardCost = 6
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_wlion")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_d05tx")

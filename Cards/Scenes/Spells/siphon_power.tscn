@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://e3fo4m7bvs2u"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_gge7s"]
+[ext_resource type="Texture2D" uid="uid://dpppg3j20jhne" path="res://Cards/Set B/203Siphon_Power.png" id="2_ohsxj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qet2b"]
+size = Vector2(150, 210)
+
+[node name="Siphon Power" type="Node2D"]
+script = ExtResource("1_gge7s")
+CardName = "Siphon Power"
+CardDescriptionm = "\"Choose an Adventurer in your party that is LVL 2 or LVL 1. Search your deck for a card that Adventurer can Level Up into and discard it. Then, shuffle your deck. That Adventurer gains ATK equal to the discarded Adventurer's ATK until the next End Step and cannot Level Up until your next turn\""
+CardCost = 4
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ohsxj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qet2b")

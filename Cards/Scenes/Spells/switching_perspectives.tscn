@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://buid2qfa3qkwn"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_1l6v1"]
+[ext_resource type="Texture2D" uid="uid://bsmsvsepw6elu" path="res://Cards/Set B/205Switching_Perspectives.png" id="2_8mxo5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_noovd"]
+size = Vector2(150, 210)
+
+[node name="Switching Perspectives" type="Node2D"]
+script = ExtResource("1_1l6v1")
+CardName = "Switching Perspectives"
+CardDescriptionm = "\"You may play this card only if you have more Guild Damage than your opponent.Each Guildmaster counts the number of cards in their opponent's hand. Then, each Guildmaster shuffles their hand into their deck and draws that many cards.\""
+CardCost = 4
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_8mxo5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_noovd")
