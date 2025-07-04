@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb7hpp7kdu473"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_e0vum"]
+[ext_resource type="Texture2D" uid="uid://cu5i2ham7qxkg" path="res://Cards/Set B/021Willow_(Lvl_2).png" id="2_seoal"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="WillowLvl2" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_e0vum")
+CardName = "Willow"
+CardDescriptionm = "When Willow deals damage to an Adventurer during a Raid, if that Adventurer has 15 or more ATK, it is Defeated."
+CardCost = 5
+AdventurerYield = 4
+CardImage = NodePath("WillowLvl2Sprite")
+AdventurerLvl = 2
+CardType = "Fox"
+AdventurerType = "Arcane"
+AdventurerAttack = 8
+AdventurerHP = 5
+
+[node name="WillowLvl2Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_seoal")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

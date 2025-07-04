@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://udj5fb02vcqk"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xh06s"]
+[ext_resource type="Texture2D" uid="uid://bdmv3utuhgisc" path="res://Cards/Set B/015Razz,_Interloper.png" id="2_hmuu7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="RazzInterloper" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_xh06s")
+CardName = "Razz, Interloper"
+CardDescriptionm = "*Double Hit (This Adventurer hits twice. When it Raids, if the first hit Defeats, the second targets the Guild.)* The first time Razz, Interloper Raids, it gains +10 ATK until the next End Step. If any damage was dealt this way, Razz, Interloper cannot Raid *or* Fortify on your next turn."
+CardCost = 8
+AdventurerYield = 6
+CardImage = NodePath("RazzInterloperSprite")
+AdventurerLvl = 3
+CardType = "Cat"
+AdventurerType = "Arcane"
+AdventurerAttack = 10
+AdventurerHP = 10
+IsCrowned = true
+
+[node name="RazzInterloperSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_hmuu7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

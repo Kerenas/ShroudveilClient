@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cluwwi6ftoduf"]
 
 [ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_f8a76"]
-[ext_resource type="Texture2D" uid="uid://ccg85xy1qj1i8" path="res://Cards/Set A/000.png" id="2_up4c1"]
+[ext_resource type="Texture2D" uid="uid://bombds2iyct0v" path="res://Cards/Set B/000Scramble.png" id="2_nr4xl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mta0k"]
 size = Vector2(753, 1052)
@@ -15,7 +15,7 @@ AdventurerAttack = 2
 
 [node name="ScrambleSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_up4c1")
+texture = ExtResource("2_nr4xl")
 
 [node name="Area2D" type="Area2D" parent="."]
 scale = Vector2(0.2, 0.2)

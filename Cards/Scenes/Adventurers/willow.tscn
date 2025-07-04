@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs33ggnf31j3h"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_aps1i"]
+[ext_resource type="Texture2D" uid="uid://umr3n1xp0glc" path="res://Cards/Set B/020Willow.png" id="2_5whdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="Willow" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_aps1i")
+CardName = "Willow"
+CardDescriptionm = "When Willow enters the Party, if there is an Adventurer opposing Willow with at least 8 ATK, you may search your deck for a Spell with a Bundles cost up to that Adventurer's ATK. If you do, reveal it and put it in your hand, then shuffle your deck."
+CardImage = NodePath("WillowSprite")
+CardType = "Fox"
+AdventurerType = "Arcane"
+AdventurerAttack = 4
+AdventurerHP = 2
+
+[node name="WillowSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_5whdr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

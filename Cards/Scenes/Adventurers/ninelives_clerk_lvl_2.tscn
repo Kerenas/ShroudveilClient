@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://xo31bbgtf4uy"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_x3n76"]
+[ext_resource type="Texture2D" uid="uid://be80m3nd5o7k4" path="res://Cards/Set B/012NineLives_Clerk_(Lvl_2).png" id="2_cfxx3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="NineLivesClerkLvl2" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_x3n76")
+CardName = "NineLives Clerk"
+CardDescriptionm = "Once during your turn, you may draw cards until there are 5 cards in your hand. If you already have at least 5 cards in your hand when you use this effect, draw a card."
+CardCost = 6
+AdventurerYield = 4
+CardImage = NodePath("NineLivesClerkLvl2Sprite")
+AdventurerLvl = 2
+CardType = "Cat"
+AdventurerType = "Support"
+AdventurerAttack = 7
+AdventurerHP = 9
+
+[node name="NineLivesClerkLvl2Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_cfxx3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

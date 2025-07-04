@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddsktt4ril17p"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_cqkwf"]
+[ext_resource type="Texture2D" uid="uid://bdndo87g1orcd" path="res://Cards/Set B/017Clothbearer_(Lvl_2).png" id="2_iifop"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="ClothbearerLvl2" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_cqkwf")
+CardName = "Clothbearer"
+CardDescriptionm = "*Double Hit (This Adventurer hits twice. If the first hit Defeats, the second targets the Guild)* Clothbearer's ATK is 1 times the number of Adventurers in play. *(Both yours and your opponents, before any ATK modifiers.)*"
+CardCost = 4
+AdventurerYield = 4
+CardImage = NodePath("ClothbearerLvl2Sprite")
+AdventurerLvl = 2
+CardType = "Farkitt"
+AdventurerType = "Warrior"
+AdventurerAttack = 1
+AdventurerHP = 13
+
+[node name="ClothbearerLvl2Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_iifop")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")
