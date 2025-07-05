@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsnt3s0g8cysu"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_b3w8e"]
+[ext_resource type="Texture2D" uid="uid://8xt45f0em4fk" path="res://Cards/Set B/156Katsura.png" id="2_6bvhf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jlrnl"]
+size = Vector2(150, 210)
+
+[node name="Katsura Lvl 2" type="Node2D"]
+script = ExtResource("1_b3w8e")
+CardName = "Katsura Lvl 2"
+CardDescriptionm = "When Katsura enters the Party, you may reveal a Spell with a set Bundles cost from your hand. If you do, play that Spell, and it costs 1 Bundles less."
+CardCost = 3
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Fox"
+AdventurerType = "Warrior"
+AdventurerAttack = 2
+AdventurerHP = 10
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_6bvhf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_jlrnl")

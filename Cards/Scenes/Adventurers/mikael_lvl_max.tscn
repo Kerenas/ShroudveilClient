@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://0leurux7nffp"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_mdgvj"]
+[ext_resource type="Texture2D" uid="uid://fv5rffsfve61" path="res://Cards/Set B/153Mikael.png" id="2_rok6n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqguj"]
+size = Vector2(150, 210)
+
+[node name="Mikael Lvl MAX" type="Node2D"]
+script = ExtResource("1_mdgvj")
+CardName = "Mikael Lvl MAX"
+CardDescriptionm = "\"Whenever Mikael takes damage from an Adventurer in your opponent's Party *(even if it is Defeated)*, that Adventurer takes 3 damage.If Mikael leaves the Party, put 2 Nerf Counters on each Adventurer in your opponent's Party.\""
+CardCost = 7
+AdventurerYield = 6
+AdventurerLvl = 3
+CardType = "Dragon"
+AdventurerType = "Arcane"
+AdventurerAttack = 13
+AdventurerHP = 7
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_rok6n")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_uqguj")

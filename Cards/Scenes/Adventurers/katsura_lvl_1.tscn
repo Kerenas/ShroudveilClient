@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://1yslpl8j2ykc"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_og5bi"]
+[ext_resource type="Texture2D" uid="uid://cv6n5hp0uq24g" path="res://Cards/Set B/155Katsura.png" id="2_2wkgy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldhh5"]
+size = Vector2(150, 210)
+
+[node name="Katsura Lvl 1" type="Node2D"]
+script = ExtResource("1_og5bi")
+CardName = "Katsura Lvl 1"
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Fox"
+AdventurerType = "Warrior"
+AdventurerAttack = 2
+AdventurerHP = 4
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_2wkgy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ldhh5")

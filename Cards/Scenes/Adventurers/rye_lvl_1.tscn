@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://w50bwhtoe1bj"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_x2phb"]
+[ext_resource type="Texture2D" uid="uid://yekxhedn2g8c" path="res://Cards/Set B/158Rye.png" id="2_wlp2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tylhf"]
+size = Vector2(150, 210)
+
+[node name="Rye Lvl 1" type="Node2D"]
+script = ExtResource("1_x2phb")
+CardName = "Rye Lvl 1"
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Cat"
+AdventurerType = "Arcane"
+AdventurerAttack = 4
+AdventurerHP = 3
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_wlp2u")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tylhf")

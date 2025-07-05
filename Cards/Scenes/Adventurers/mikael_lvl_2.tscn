@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkxtcplan0m2j"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_j86gr"]
+[ext_resource type="Texture2D" uid="uid://bp27qoboj1y7v" path="res://Cards/Set B/152Mikael.png" id="2_y0wrw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc14r"]
+size = Vector2(150, 210)
+
+[node name="Mikael Lvl 2" type="Node2D"]
+script = ExtResource("1_j86gr")
+CardName = "Mikael Lvl 2"
+CardDescriptionm = "If Mikael leaves the Party, put a Nerf Counter on each Adventurer in your opponent's Party."
+CardCost = 4
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Dragon"
+AdventurerType = "Arcane"
+AdventurerAttack = 7
+AdventurerHP = 4
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_y0wrw")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tc14r")

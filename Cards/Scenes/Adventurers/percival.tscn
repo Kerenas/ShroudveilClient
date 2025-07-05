@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://chl52i7st51m4"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_5ji0u"]
+[ext_resource type="Texture2D" uid="uid://ccd6iktceqjqq" path="res://Cards/Set B/154Percival.png" id="2_g7bwq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18s80"]
+size = Vector2(150, 210)
+
+[node name="Percival" type="Node2D"]
+script = ExtResource("1_5ji0u")
+CardName = "Percival"
+CardDescriptionm = "\"**Prodigy** *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer.)*Whenever an Adventurer in your Party Defeats another Adventurer, put a Buff Counter on Percival.When you Raid, distribute all Buff Counters from Percival to other Adventurers in your Party in any way you like.\""
+CardCost = 7
+AdventurerYield = 5
+AdventurerLvl = 3
+CardType = "Lion"
+AdventurerType = "Support"
+AdventurerAttack = 7
+AdventurerHP = 7
+IsAdventurer = true
+IsProdigy = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_g7bwq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_18s80")

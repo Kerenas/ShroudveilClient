@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://by6odm4t0m8ra"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_hshcc"]
+[ext_resource type="Texture2D" uid="uid://f8q6w7n3psc7" path="res://Cards/Set B/151Mikael.png" id="2_rxwg6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7k8o"]
+size = Vector2(150, 210)
+
+[node name="Mikael Lvl 1" type="Node2D"]
+script = ExtResource("1_hshcc")
+CardName = "Mikael Lvl 1"
+CardDescriptionm = "If Mikael leaves the Party, put a Buff Counter on each other Adventurer in your Party."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Dragon"
+AdventurerType = "Arcane"
+AdventurerAttack = 4
+AdventurerHP = 2
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_rxwg6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_n7k8o")
