@@ -17,7 +17,8 @@ AdventurerAttack = 1
 AdventurerHP = 99
 IsCrowned = true
 IsAdventurer = true
-Anomalous = true
+IsProdigy = true
+RequiresShroudBlessing = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
