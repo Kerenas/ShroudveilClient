@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdcsfhv40dot"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_hh3tm"]
+[ext_resource type="Texture2D" uid="uid://vso0nwtxuitu" path="res://Cards/Set B/148Oakley.png" id="2_ndc4v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nblil"]
+size = Vector2(150, 210)
+
+[node name="Oakley Lvl 2" type="Node2D"]
+script = ExtResource("1_hh3tm")
+CardName = "Oakley Lvl 2"
+CardDescriptionm = "Once, when you Fortify, you may put a Spell from your stash into your Hand."
+CardCost = 3
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Fox"
+AdventurerType = "Arcane "
+AdventurerAttack = 5
+AdventurerHP = 4
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ndc4v")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_nblil")

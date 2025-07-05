@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcyg7ios3lc0y"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_3o6d6"]
+[ext_resource type="Texture2D" uid="uid://dn20w25mpgcjq" path="res://Cards/Set B/125The_Shroudwalker.png" id="2_qeaf2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnpvh"]
+size = Vector2(150, 210)
+
+[node name="The Shroudwalker (Chester)" type="Node2D"]
+script = ExtResource("1_3o6d6")
+CardName = "The Shroudwalker (Chester)"
+CardDescriptionm = "\"**Prodigy** *(This card can be played into an empty party slot as if it were a lvl 1 Adventurer).*Once during your turn, you may have an Adventurer in your party Duel an Adventurer in your opponent's Party. When The Shroudwalker Defeats an Adventurer, it gains that Adventurer's class in addition to its own.\""
+CardCost = 10
+AdventurerYield = 1
+AdventurerLvl = 3
+CardType = "Anomaly"
+AdventurerType = "Boss"
+AdventurerAttack = 10
+AdventurerHP = 15
+IsCrowned = true
+IsAdventurer = true
+IsProdigy = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qeaf2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_dnpvh")

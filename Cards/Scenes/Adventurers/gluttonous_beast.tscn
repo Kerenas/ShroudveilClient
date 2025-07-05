@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://caouri0vg8wf8"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_sablg"]
+[ext_resource type="Texture2D" uid="uid://d1aecdchrdr8l" path="res://Cards/Set B/131Gluttonous_Beast.png" id="2_evvgv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tplt7"]
+size = Vector2(150, 210)
+
+[node name="Gluttonous Beast" type="Node2D"]
+script = ExtResource("1_sablg")
+CardName = "Gluttonous Beast"
+CardDescriptionm = "You may place a Buff Counter on Gluttonous Beast at any time. If you do, Defeat another Adventurer in your Party."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 1
+AdventurerHP = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_evvgv")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tplt7")

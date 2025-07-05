@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dln5wbx76wwuf"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_5314u"]
+[ext_resource type="Texture2D" uid="uid://b3xiawpve8l5m" path="res://Cards/Set B/140Red_Mushroom.png" id="2_umxgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kbt0j"]
+size = Vector2(150, 210)
+
+[node name="Red Mushroom Lvl 1" type="Node2D"]
+script = ExtResource("1_5314u")
+CardName = "Red Mushroom Lvl 1"
+CardDescriptionm = "When you play Red Mushroom from your hand to an empty Party Slot, Adventurers in adjacent Party Slots gain a Nerf Counter. Red Mushroom gains a Buff Counter for each Nerf Counter placed this way."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Monster"
+AdventurerType = "Warrior"
+AdventurerAttack = 1
+AdventurerHP = 5
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_umxgj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_kbt0j")

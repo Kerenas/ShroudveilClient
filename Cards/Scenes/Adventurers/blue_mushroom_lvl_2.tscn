@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://c15qrx7upefrj"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_s3xoc"]
+[ext_resource type="Texture2D" uid="uid://btvbu02i6x2gl" path="res://Cards/Set B/144Blue_Mushroom.png" id="2_qgslu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sg0o"]
+size = Vector2(150, 210)
+
+[node name="Blue Mushroom Lvl 2" type="Node2D"]
+script = ExtResource("1_s3xoc")
+CardName = "Blue Mushroom Lvl 2"
+CardDescriptionm = "\"As often as you'd like during your turn, you may discard an Adventurer from your hand and search your deck for an Adventurer with \"\"Mushroom\"\" in its name, reveal it, and put it in your hand. Whenever you use this effect, shuffle your deck afterwards.Blue Mushroom gains +1 ATK for each Adventurer in your Shroud Zone\""
+CardCost = 4
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Monster"
+AdventurerType = "Arcane"
+AdventurerAttack = 6
+AdventurerHP = 4
+IsAdventurer = true
+IsPlusHP = true
+PlusHPValue = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qgslu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_1sg0o")

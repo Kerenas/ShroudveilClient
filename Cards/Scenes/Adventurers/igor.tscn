@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlkxeqvicqds"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_7uxtj"]
+[ext_resource type="Texture2D" uid="uid://c6h2847do7l6n" path="res://Cards/Set B/146Igor.png" id="2_tfqbj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dygtn"]
+size = Vector2(150, 210)
+
+[node name="Igor" type="Node2D"]
+script = ExtResource("1_7uxtj")
+CardName = "Igor"
+CardDescriptionm = "At any time, you may discard an Item or Spell from your hand. If you do, put a Ward Counter on an Adventurer in play. If a Ward Counter was placed this way, Igor is Defeated."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Dragon"
+AdventurerType = "Arcane"
+AdventurerAttack = 4
+AdventurerHP = 3
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tfqbj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_dygtn")

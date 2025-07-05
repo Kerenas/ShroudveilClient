@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dthqg3ru5qfpw"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_v3r5f"]
+[ext_resource type="Texture2D" uid="uid://q5uqu27p76rm" path="res://Cards/Set B/132Clover.png" id="2_2gxlg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rf7uf"]
+size = Vector2(150, 210)
+
+[node name="Clover Lvl 1" type="Node2D"]
+script = ExtResource("1_v3r5f")
+CardName = "Clover Lvl 1"
+CardDescriptionm = "Once during your turn, you may pay 3 Bundles. If you do, place 1 Nerf Counter on an Adventurer in play."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Fox"
+AdventurerType = "Support"
+AdventurerAttack = 3
+AdventurerHP = 3
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_2gxlg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_rf7uf")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0pkqyr0w6srm"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_7to5n"]
+[ext_resource type="Texture2D" uid="uid://r24iq0toefs1" path="res://Cards/Set B/137Ramsus.png" id="2_at68w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcljh"]
+size = Vector2(150, 210)
+
+[node name="Ramsus Lvl 2" type="Node2D"]
+script = ExtResource("1_7to5n")
+CardName = "Ramsus Lvl 2"
+CardDescriptionm = "If a Buff Counter is placed onto an Adventurer in your Party, Ramsus gains +1 ATK until the end of turn."
+CardCost = 2
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Dragon"
+AdventurerType = "Warrior"
+AdventurerAttack = 2
+AdventurerHP = 10
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.21, 0.21)
+texture = ExtResource("2_at68w")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qcljh")

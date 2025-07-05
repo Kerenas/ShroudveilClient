@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://43eubvak0qus"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_dq4gw"]
+[ext_resource type="Texture2D" uid="uid://cmtw3ttaw677c" path="res://Cards/Set B/126The_Bland_White_Cube.png" id="2_0s5dg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ahs4c"]
+size = Vector2(150, 210)
+
+[node name="The Bland White Cube" type="Node2D"]
+script = ExtResource("1_dq4gw")
+CardName = "The Bland White Cube"
+CardDescriptionm = "When The Bland White Cube enters the Party, flip 10 coins. Then, draw a card."
+AdventurerLvl = 3
+CardType = "Anomaly"
+AdventurerType = "Warrior"
+AdventurerAttack = 1
+AdventurerHP = 99
+IsCrowned = true
+IsAdventurer = true
+Anomalous = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0s5dg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ahs4c")

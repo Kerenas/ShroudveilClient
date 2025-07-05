@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo3der1p0xlsa"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xwhqm"]
+[ext_resource type="Texture2D" uid="uid://lc6up06xwbr" path="res://Cards/Set B/129Wayfarer.png" id="2_p7jg3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fe03d"]
+size = Vector2(150, 210)
+
+[node name="Wayfarer Lvl 1" type="Node2D"]
+script = ExtResource("1_xwhqm")
+CardName = "Wayfarer Lvl 1"
+CardDescriptionm = "\"When Wayfarer enters the Party, place a Ward Counter on it. When a Ward Counter is broken on your Turf, you may draw a card. \""
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Farkitt"
+AdventurerType = "Arcane"
+AdventurerAttack = 6
+AdventurerHP = 1
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_p7jg3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fe03d")
