@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvou4nf1xisd7"]
+[gd_scene load_steps=8 format=3 uid="uid://bvou4nf1xisd7"]
 
 [ext_resource type="Script" uid="uid://vetyr080ykro" path="res://CardManager.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cq1qgikhjqyvo" path="res://Shroudveil_Back.png" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://cf1d2q5dx1dh3" path="res://Playmats/Juniper_Playmat.png" id="5_7mycd"]
+[ext_resource type="Script" uid="uid://c1bk8tyympln3" path="res://InputManager.gd" id="5_272bh"]
 [ext_resource type="PackedScene" uid="uid://g82e817mw8yo" path="res://PartySlot.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://0d25erkomxwe" path="res://Cards/Scenes/Adventurers/astrid.tscn" id="6_7mycd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
 size = Vector2(221, 301)
@@ -12,6 +14,9 @@ size = Vector2(221, 301)
 
 [node name="CardManager" type="Node2D" parent="."]
 script = ExtResource("1_ig7tw")
+
+[node name="Astrid" parent="CardManager" instance=ExtResource("6_7mycd")]
+position = Vector2(534, 967)
 
 [node name="JuniperPlaymat" type="Sprite2D" parent="."]
 z_index = -9
@@ -48,3 +53,7 @@ texture = ExtResource("4_1bvp3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Deck/Area2D"]
 position = Vector2(-1.5, -6.5)
 shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="InputManager" type="Node2D" parent="."]
+position = Vector2(1773, 772)
+script = ExtResource("5_272bh")

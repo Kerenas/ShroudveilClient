@@ -1,5 +1,6 @@
 class_name Card extends Node2D
 
+var hand_position
 @export var CardName: String
 @export var CardDescriptionm: String
 @export var CardCost: int = 0
