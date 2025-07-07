@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://j7s42yd16oni"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_kniu5"]
+[ext_resource type="Texture2D" uid="uid://7qwnecbla1pl" path="res://Cards/Set B/086Kiss_the_Cook.png" id="2_kniu5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="KissTheCook" type="Node2D"]
+script = ExtResource("1_kniu5")
+CardName = "Kessa's Darkness"
+CardDescriptionm = "Move up to 3 Lingering Damage from an Adventurer in your Party to an Adventurer in your opponent's Party. Give the Adventurer in your Party a Buff Counter for each Lingering Damage removed from it in this way."
+CardCost = 5
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_kniu5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtiqyv1xl4vok"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_570cu"]
+[ext_resource type="Texture2D" uid="uid://jxk82gdxq3v2" path="res://Cards/Set B/031Blossom_(Lvl_2).png" id="2_570cu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_semvq"]
+size = Vector2(150, 210)
+
+[node name="BlossomLvl2" type="Node2D"]
+script = ExtResource("1_570cu")
+CardName = "Blossom"
+CardDescriptionm = "*Double Hit (This Adventurer hits twice. If the first hit Defeats, the second targets the Guild)* Once during your turn, if your Party has 3 different Archetypes and 3 different Classes, when you play a Spell card, you may pay its Bundles cost again. If you do, you may use the effect of that card a second time."
+CardCost = 4
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Fox"
+AdventurerType = "Support"
+AdventurerAttack = 4
+AdventurerHP = 6
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_570cu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_semvq")

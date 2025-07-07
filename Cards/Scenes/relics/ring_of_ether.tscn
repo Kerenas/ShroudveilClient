@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgmr53i1qhcny"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_iakg7"]
+[ext_resource type="Texture2D" uid="uid://deyrh8bp0lgc3" path="res://Cards/Set B/105Ring_of_Ether.png" id="2_iakg7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_joj80"]
+size = Vector2(150, 210)
+
+[node name="RingOfEther" type="Node2D"]
+script = ExtResource("1_iakg7")
+CardName = "Ring of Ether"
+CardDescriptionm = "The attached Adventurer gains +3 ATK and 1 Ward Counter. *(A Ward Counter negates all damage from 1 source and breaks when used.)* When Ring of Ether is discarded, deal 3 damage to the Adventurer opposing the attached Adventurer."
+CardCost = 6
+CardType = "Relic"
+AdventurerType = "Arcane"
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_iakg7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_joj80")

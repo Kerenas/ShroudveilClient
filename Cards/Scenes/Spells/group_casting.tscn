@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctq081dqtscaq"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_l8aiw"]
+[ext_resource type="Texture2D" uid="uid://7fywr60f8wgv" path="res://Cards/Set B/093Group_Casting.png" id="2_l8aiw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ws385"]
+size = Vector2(150, 210)
+
+[node name="GroupCasting" type="Node2D"]
+script = ExtResource("1_l8aiw")
+CardName = "Group Casting"
+CardDescriptionm = "Search your deck for up to 2 Spells, except \"Group Casting\", with a combined cost of 9 Bundles or less, then shuffle your deck. Play any cards searched this way from your deck without paying their Bundles cost, and in any order you like. Shuffle any cards not played this way back into your deck."
+CardCost = 9
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_l8aiw")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ws385")

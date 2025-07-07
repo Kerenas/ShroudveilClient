@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceql65ubp2na8"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ijx6p"]
+[ext_resource type="Texture2D" uid="uid://djfe21hecn4yh" path="res://Cards/Set B/077Familial_Bond.png" id="2_ijx6p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="FamilialBond" type="Node2D"]
+script = ExtResource("1_ijx6p")
+CardName = "Familial Bond"
+CardDescriptionm = "*You may play this card only if your Party contains 3 Cat Adventurers.*Place 3 Buff Counters on an Adventurer in your Party. Choose up to two other Adventurers in your Party. Those Adventurers gain 3 Buff Counters. Pay 3 Bundles for each Adventurer chosen this way."
+CardCost = 3
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ijx6p")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

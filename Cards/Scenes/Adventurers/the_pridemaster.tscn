@@ -19,6 +19,8 @@ AdventurerType = "Boss"
 AdventurerAttack = 10
 AdventurerHP = 18
 IsCrowned = true
+IsAdventurer = true
+IsProdigy = true
 
 [node name="ThePridemasterSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)

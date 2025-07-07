@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://0d25erkomxwe"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_j6dg5"]
+[ext_resource type="Texture2D" uid="uid://b5tp13ich27v7" path="res://Cards/Set B/024Astrid.png" id="2_j6dg5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0y4xe"]
+size = Vector2(150, 210)
+
+[node name="Astrid" type="Node2D"]
+script = ExtResource("1_j6dg5")
+CardName = "Astrid"
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Dragon"
+AdventurerType = "Warrior"
+AdventurerHP = 8
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_j6dg5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_0y4xe")

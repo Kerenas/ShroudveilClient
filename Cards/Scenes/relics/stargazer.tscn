@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsppfq1rfqwwp"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_av2dx"]
+[ext_resource type="Texture2D" uid="uid://drwthkeytf5m7" path="res://Cards/Set B/100Stargazer_(Telescope).png" id="2_av2dx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmg3q"]
+size = Vector2(150, 210)
+
+[node name="Stargazer" type="Node2D"]
+script = ExtResource("1_av2dx")
+CardName = "Stargazer"
+CardDescriptionm = "While Stargazer is attached to an Adventurer in your Party, your opponent must have their HQ card face up. If your opponent's HQ card is face-up, negate its effect(s). If Stargazer leaves play, your opponent's HQ remains face-up, but regains its effect(s)."
+CardCost = 4
+CardType = "Relic"
+AdventurerType = "Support"
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_av2dx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_pmg3q")

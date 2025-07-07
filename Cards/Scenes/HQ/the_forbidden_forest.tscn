@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://8q82h3pvw5hf"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_h07rf"]
+[ext_resource type="Texture2D" uid="uid://bj51scbg658m7" path="res://Cards/Set B/111The_Forbidden_Forest.png" id="2_h07rf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6i6w"]
+size = Vector2(150, 210)
+
+[node name="TheForbiddenForest" type="Node2D"]
+script = ExtResource("1_h07rf")
+CardName = "The Forbidden Forest"
+CardDescriptionm = "When this card is flipped face-up, deal 3 Damage to up to 2 Adventurers in play. If an Adventurer would be Defeated by this effect, it's Guildmaster discards cards from the top of their deck equal to their Bundles Yield. Spells in your hand and your Stash cost 1 Bundles less to play. All Adventurers have -2 HP, except Boss Class and Monster Archetype Adventurers. *(An Adventurer's HP cannot reach 0 because of this effect.)*"
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_h07rf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_m6i6w")

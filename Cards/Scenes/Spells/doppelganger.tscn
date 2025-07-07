@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnrr61bkyjcp6"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_b5cc2"]
+[ext_resource type="Texture2D" uid="uid://dbnd2xenhk4mb" path="res://Cards/Set B/092Doppelgänger.png" id="2_b5cc2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kuo3"]
+size = Vector2(150, 210)
+
+[node name="Doppelganger" type="Node2D"]
+script = ExtResource("1_b5cc2")
+CardName = "Doppelgänger"
+CardDescriptionm = "Make a copy of an Adventurer in your Party. You may put it in any Party Slot in your Party, its name is \"Doppelgänger\", and it cannot Disappear. *(This does not count as entering the Party.)* If you put the copy in a Party Slot that has been taken up by another Adventurer, that Adventurer Disappears and Reappears only when the copy leaves play. The copy is removed at your next End Step."
+CardCost = 8
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_b5cc2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4kuo3")

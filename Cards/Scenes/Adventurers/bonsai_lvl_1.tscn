@@ -10,6 +10,7 @@ size = Vector2(150, 210)
 script = ExtResource("1_skca8")
 CardName = "Bonsai Lvl 1"
 AdventurerYield = 2
+AdventurerLvl = 1
 CardType = "Fox"
 AdventurerType = "Arcane"
 AdventurerAttack = 4

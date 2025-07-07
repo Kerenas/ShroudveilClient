@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvmsqrxnykvnr"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ramff"]
+[ext_resource type="Texture2D" uid="uid://b34vkvi8bq62a" path="res://Cards/Set B/058Remodeling_Kit.png" id="2_ramff"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_io2rd"]
+size = Vector2(150, 210)
+
+[node name="RemodelingKit" type="Node2D"]
+script = ExtResource("1_ramff")
+CardName = "Remodeling Kit"
+CardDescriptionm = "Flip a coin. If heads, put your HQ card back into your hand. If tails, draw a card."
+CardCost = 3
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ramff")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_io2rd")

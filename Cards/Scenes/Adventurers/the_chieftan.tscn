@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnnk3iv5u1bu7"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_b0ric"]
+[ext_resource type="Texture2D" uid="uid://2dm6du233byv" path="res://Cards/Set B/047The_Cheiftan.png" id="2_b0ric"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="TheChieftan" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_b0ric")
+CardName = "The Chieftan"
+CardDescriptionm = "*Prodigy* *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer.)* When The Chieftan enters the Party, draw 3 cards. If an Adventurer is put into the Shroud Zone from anywhere, draw a card. Farkitts in your Party have *Keyword for 1/2 damage* from Lions."
+CardCost = 9
+AdventurerYield = 1
+CardImage = NodePath("Sprite2D")
+AdventurerLvl = 3
+CardType = "Farkitt"
+AdventurerType = "Boss"
+AdventurerAttack = 12
+AdventurerHP = 15
+IsCrowned = true
+IsAdventurer = true
+IsProdigy = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_b0ric")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

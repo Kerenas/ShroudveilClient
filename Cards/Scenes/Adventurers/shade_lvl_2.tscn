@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dua1oau0ghd46"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_lcc5k"]
+[ext_resource type="Texture2D" uid="uid://vmeyuuxfb144" path="res://Cards/Set B/035Shade_(Lvl_2).png" id="2_lcc5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq68b"]
+size = Vector2(150, 210)
+
+[node name="ShadeLvl2" type="Node2D"]
+script = ExtResource("1_lcc5k")
+CardName = "Shade"
+CardDescriptionm = "If Shade Defeats an Adventurer, draw a card."
+CardCost = 3
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Farkitt"
+AdventurerType = "Arcane"
+AdventurerAttack = 6
+AdventurerHP = 4
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_lcc5k")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fq68b")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://xlles01bj3my"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_v3tfm"]
+[ext_resource type="Texture2D" uid="uid://ycndn82wtj22" path="res://Cards/Set B/067Calling_Card.png" id="2_v3tfm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lo73m"]
+size = Vector2(150, 210)
+
+[node name="CallingCard" type="Node2D"]
+script = ExtResource("1_v3tfm")
+CardName = "Calling Card"
+CardDescriptionm = "Play a LVL 2 Adventurer from your hand onto one of your empty Party Slots."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_v3tfm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lo73m")

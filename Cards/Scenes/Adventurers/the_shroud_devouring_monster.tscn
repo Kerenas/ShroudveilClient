@@ -19,6 +19,7 @@ AdventurerAttack = 4
 AdventurerHP = 4
 IsCrowned = true
 IsAdventurer = true
+IsProdigy = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)

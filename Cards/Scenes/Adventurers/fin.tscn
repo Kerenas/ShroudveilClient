@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://wj84nete1d0r"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_waqem"]
+[ext_resource type="Texture2D" uid="uid://b8d771pik8j2v" path="res://Cards/Set B/022Fin.png" id="2_waqem"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccjy1"]
+size = Vector2(150, 210)
+
+[node name="Fin" type="Node2D"]
+script = ExtResource("1_waqem")
+CardName = "Fin"
+CardDescriptionm = "Fin has +2 HP for each Adventurer in your Party who does not share a class with it. If Fin attacks a Warrior Class Adventurer, it deals 5 additional damage."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Dragon"
+AdventurerType = "Arcane"
+AdventurerAttack = 5
+AdventurerHP = 1
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_waqem")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ccjy1")

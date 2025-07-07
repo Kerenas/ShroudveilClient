@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://doufc1oyuxdvm"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_imjpm"]
+[ext_resource type="Texture2D" uid="uid://bii5iwee5c5p1" path="res://Cards/Set B/023Fin_(Lvl_2).png" id="2_imjpm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccjy1"]
+size = Vector2(150, 210)
+
+[node name="FinLvl2" type="Node2D"]
+script = ExtResource("1_imjpm")
+CardName = "Fin"
+CardDescriptionm = "Fin has +2 HP for each Adventurer in your Party who does not share a class with it. On your Adventuring Step, If Fin Defeats an Opposing Adventurer when that Adventurer's HP is at its maximum, your opponent takes 1 Guild Damage. "
+CardCost = 8
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Dragon"
+AdventurerType = "Arcane"
+AdventurerAttack = 13
+AdventurerHP = 4
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_imjpm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ccjy1")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dogora446swku"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_yo5jb"]
+[ext_resource type="Texture2D" uid="uid://dklqi2w6sgicm" path="res://Cards/Set B/115Fox_Spirit's_Homestead.png" id="2_yo5jb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42s6h"]
+size = Vector2(150, 210)
+
+[node name="FoxSpirit\'sHomestead" type="Node2D"]
+script = ExtResource("1_yo5jb")
+CardName = "Fox Spirit's Homestead"
+CardDescriptionm = "When this card is flipped face-up, you may reveal cards from the top of your deck until you reveal a Spell with a set Bundles cost. If you do, shuffle the other cards back into your deck, and play that Spell without paying its Bundles cost. Fox Adventurers get +3 ATK. Arcane Class Adventurers gain +3 HP."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_yo5jb")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_42s6h")

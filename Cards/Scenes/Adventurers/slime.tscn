@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cojbgj1ehcl7n"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xhu1h"]
+[ext_resource type="Texture2D" uid="uid://cdlwgp80nxfao" path="res://Cards/Set B/037Slime.png" id="2_xhu1h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq68b"]
+size = Vector2(150, 210)
+
+[node name="Slime" type="Node2D"]
+script = ExtResource("1_xhu1h")
+CardName = "Slime"
+CardDescriptionm = "Lions in your Party gain +1 HP."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 1
+AdventurerHP = 3
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_xhu1h")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fq68b")

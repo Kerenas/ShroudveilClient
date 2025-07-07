@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhc4suwsvsoni"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_hphrf"]
+[ext_resource type="Texture2D" uid="uid://dmbruahyq240m" path="res://Cards/Set B/116The_Colosseum.png" id="2_yxpwv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6i6w"]
+size = Vector2(150, 210)
+
+[node name="TheColosseum" type="Node2D"]
+script = ExtResource("1_hphrf")
+CardName = "The Colosseum"
+CardDescriptionm = "When this card is flipped face-up, target Adventurer in your Party Duels an Adventurer in your opponent's Party. Yields from Adventurers during this Duel are doubled. When an Adventurer in your opponent's Party deals damage on your Turf, it takes 1 Damage for each Adventurer in your Party."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_yxpwv")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_m6i6w")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://gn4dyuv1wr6i"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ye3g5"]
+[ext_resource type="Texture2D" uid="uid://rb07ykjjd4l8" path="res://Cards/Set B/062Pie_Bomb.png" id="2_ye3g5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_be1wi"]
+size = Vector2(150, 210)
+
+[node name="PieBomb" type="Node2D"]
+script = ExtResource("1_ye3g5")
+CardName = "Pie Bomb"
+CardDescriptionm = "Deal 2 Damage to an Adventurer in play. If that Adventurer is a Warrior, Deal 6 Damage instead."
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ye3g5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_be1wi")

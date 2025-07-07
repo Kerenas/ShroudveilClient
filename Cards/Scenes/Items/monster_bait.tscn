@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://da6lpnfb28fi1"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_oahpp"]
+[ext_resource type="Texture2D" uid="uid://br6w2i2el3jmu" path="res://Cards/Set B/050Monster_Bait.png" id="2_oahpp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ugxfp"]
+size = Vector2(150, 210)
+
+[node name="MonsterBait" type="Node2D"]
+script = ExtResource("1_oahpp")
+CardName = "Monster Bait"
+CardDescriptionm = "You may play this card only if you have two or more Monster cards in your Party. Flip a coin until you flip tails. For each heads, discard one card from the top of your opponent's deck."
+CardCost = 1
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_oahpp")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ugxfp")

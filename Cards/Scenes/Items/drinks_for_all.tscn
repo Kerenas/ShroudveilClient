@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2cykgjl0xbrt"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_bi0p5"]
+[ext_resource type="Texture2D" uid="uid://ddw6wi0i87wlb" path="res://Cards/Set B/057Drinks_for_All!.png" id="2_xpayj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lo73m"]
+size = Vector2(150, 210)
+
+[node name="DrinksForAll" type="Node2D"]
+script = ExtResource("1_bi0p5")
+CardName = "Drinks For All!"
+CardDescriptionm = "Draw 3 cards."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_xpayj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lo73m")

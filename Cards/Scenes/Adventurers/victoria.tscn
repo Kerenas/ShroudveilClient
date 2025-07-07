@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://vhqaewgj64t3"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_rgnj3"]
+[ext_resource type="Texture2D" uid="uid://xi6tx8uovmlc" path="res://Cards/Set B/041Victoria.png" id="2_rgnj3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccjy1"]
+size = Vector2(150, 210)
+
+[node name="Victoria" type="Node2D"]
+script = ExtResource("1_rgnj3")
+CardName = "Victoria"
+CardDescriptionm = "*Prodigy* *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer.)* When Victoria Raids, it gains +1 ATK for each Adventurer in play that shares a Class with it. *(Both yours and your opponent's.)*"
+CardCost = 7
+AdventurerYield = 5
+AdventurerLvl = 3
+CardType = "Lion"
+AdventurerType = "Arcane"
+AdventurerAttack = 13
+AdventurerHP = 7
+IsAdventurer = true
+IsProdigy = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_rgnj3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ccjy1")

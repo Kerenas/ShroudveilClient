@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://kjlfixjum25f"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_d8sni"]
+[ext_resource type="Texture2D" uid="uid://dhfaq14fageds" path="res://Cards/Set B/081Fireball.png" id="2_d8sni"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="Fireball" type="Node2D"]
+script = ExtResource("1_d8sni")
+CardName = "Fireball"
+CardDescriptionm = "Deal 3 Damage to 2 Adventurers in play. If this card is played during a Raid on your opponent's turn, you may deal 8 Damage to 1 Adventurer instead."
+CardCost = 4
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_d8sni")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

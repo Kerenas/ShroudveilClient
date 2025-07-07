@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c81rccb26rj3q"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_g6cak"]
+[ext_resource type="Texture2D" uid="uid://b46x34v2osl0u" path="res://Cards/Set B/033The_One_Bathed_in_Flame.png" id="2_g6cak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="TheOneBathedInFlame" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_g6cak")
+CardName = "The One Bathed In Flame"
+CardDescriptionm = "*Prodigy* *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer).* During each End Step, each Adventurer in your opponent's Party takes 3 Damage. Other Dragons in your Party gain +3 ATK."
+CardCost = 10
+AdventurerYield = 1
+CardImage = NodePath("Sprite2D")
+AdventurerLvl = 3
+CardType = "Dragon"
+AdventurerType = "Boss"
+AdventurerAttack = 18
+AdventurerHP = 9
+IsCrowned = true
+IsAdventurer = true
+IsProdigy = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_g6cak")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

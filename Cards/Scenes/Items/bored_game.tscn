@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2t55k4jr8we6"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_7a4ou"]
+[ext_resource type="Texture2D" uid="uid://cdwpax3v4ve67" path="res://Cards/Set B/068Bored_Game.png" id="2_7a4ou"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrhaq"]
+size = Vector2(150, 210)
+
+[node name="BoredGame" type="Node2D"]
+script = ExtResource("1_7a4ou")
+CardName = "Bored Game"
+CardDescriptionm = "Target Adventurer with 5 or more Buff Counters Dissapears until the next End Step. If you play this card during your opponent's turn, that Adventurer also Yields 0 Bundles next time it would Yield."
+CardCost = 5
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_7a4ou")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_rrhaq")

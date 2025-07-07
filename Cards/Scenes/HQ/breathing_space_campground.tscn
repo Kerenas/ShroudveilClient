@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxkpih020slhe"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_cvo3c"]
+[ext_resource type="Texture2D" uid="uid://b1b1gvorn1lbw" path="res://Cards/Set B/118Breathing_Space_Campground.png" id="2_cvo3c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42s6h"]
+size = Vector2(150, 210)
+
+[node name="BreathingSpaceCampground" type="Node2D"]
+script = ExtResource("1_cvo3c")
+CardName = "Breathing Space Campground"
+CardDescriptionm = "When this card is flipped face-up, you may search your deck for a Legendary Relic and put it into your Stash. Then, shuffle your deck. Precursors and Adventurers with \"Bell Bearer\" may use their \"once during your turn\" abilities twice during your turn. Farkitts get +3 HP."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_cvo3c")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_42s6h")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt16eiuxhsta"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_u7v37"]
+[ext_resource type="Texture2D" uid="uid://5o4v1dkfteyq" path="res://Cards/Set B/032The_Kitsune.png" id="2_u7v37"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fsan"]
+size = Vector2(150, 210)
+
+[node name="TheKitsune" type="Node2D" node_paths=PackedStringArray("CardImage")]
+script = ExtResource("1_u7v37")
+CardName = "The Kitsune"
+CardDescriptionm = "*Prodigy*  *(This card can be played into an empty Party Slot as if it were a lvl 1 Adventurer).* Once during your turn, you may play a Spell with a Bundles cost of 8 or less from your Shroud Zone without paying its Bundles cost. If you do, shuffle that card back into your deck. This effect cannot be used more than once during your turn."
+CardCost = 7
+AdventurerYield = 1
+CardImage = NodePath("Sprite2D")
+AdventurerLvl = 3
+CardType = "Fox"
+AdventurerType = "Boss"
+AdventurerAttack = 12
+AdventurerHP = 12
+IsCrowned = true
+IsAdventurer = true
+IsProdigy = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_u7v37")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8fsan")

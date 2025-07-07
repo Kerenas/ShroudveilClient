@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0bywncjh66ji"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xm5ac"]
+[ext_resource type="Texture2D" uid="uid://b0pf7cs312ijy" path="res://Cards/Set B/110The_Catclaw_Cookery.png" id="2_xm5ac"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6i6w"]
+size = Vector2(150, 210)
+
+[node name="TheCatclawCookery" type="Node2D"]
+script = ExtResource("1_xm5ac")
+CardName = "The Catclaw Cookery"
+CardDescriptionm = "When this card is flipped face-up, search your deck for an item card with a Bundles cost of 4 or lower. Then, shuffle your deck. You may play that card without paying its Bundles cost or reveal it and put it into your hand. Draw 1 card for each Item you play during your Planning Step. Each time you play an item, flip a coin. If heads, your opponent draws a card."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_xm5ac")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_m6i6w")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyy08glop6u37"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_1iktk"]
+[ext_resource type="Texture2D" uid="uid://bcjfo5fanmoqq" path="res://Cards/Set B/059Care_Package.png" id="2_1iktk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lo73m"]
+size = Vector2(150, 210)
+
+[node name="CarePackage" type="Node2D"]
+script = ExtResource("1_1iktk")
+CardName = "Care Package"
+CardDescriptionm = "Shuffle up to 2 of any combination of Item and Spell cards, except Care Package, from your Shroud Zone into your deck."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_1iktk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lo73m")

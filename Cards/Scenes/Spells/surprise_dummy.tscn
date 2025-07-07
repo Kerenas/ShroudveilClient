@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://4j7ef6vakwo6"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_430s6"]
+[ext_resource type="Texture2D" uid="uid://dmswwysd34sik" path="res://Cards/Set B/091Surprise_Dummy.png" id="2_430s6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d05tx"]
+size = Vector2(150, 210)
+
+[node name="SurpriseDummy" type="Node2D"]
+script = ExtResource("1_430s6")
+CardName = "Surprise Dummy"
+CardDescriptionm = "Target Adventurer in your Party Disappears until the end of your opponent's next turn. Place a token on the same Party Slot as that Adventurer. Its name is \"Surprise Dummy\", and it has 1 ATK, 1 HP, 0 Yield, and cannot Raid or Fortify. This token is discarded at the end of your opponent's next turn."
+CardCost = 7
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_430s6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_d05tx")
