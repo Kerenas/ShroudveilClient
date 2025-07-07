@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751746219
-CardManager.gd::GDScript/GDScript::1483420642381995176::1751587732::0::1::::<>Node2D<><>0<>0<><>::
+::res://::1751911085
+CardManager.gd::GDScript::1483420642381995176::1751758428::0::1::::<>Node2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2458472973102637141::1751404641::1751404656::1::::<><><>0<>0<>48f08a5b0a3ace9bd2d762b7e1eeba09<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 IMG_6099.png::CompressedTexture2D/CompressedTexture2D::4517594144389736468::1751429508::1751430012::1::::<><><>0<>0<>f5969b3acdb1ff15a7f7714a8f7b22b4<>res://.godot/imported/IMG_6099.png-714d57f881f0aaaf4ab137c62d5d99bc.ctex::
 IMG_6100.png::CompressedTexture2D/CompressedTexture2D::6493342554271753402::1751429525::1751430012::1::::<><><>0<>0<>11aaf0883de6351dff751a62f00a0162<>res://.godot/imported/IMG_6100.png-5945b490682ddb80dd0c4ce6d4d74f08.ctex::
-Juniper_Playmat.tscn::PackedScene/PackedScene::5804576740322776398::1751587743::0::1::::<><><>0<>0<><>::uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png<>uid://b0j3jvoln4a4p::::res://Playmat.gd
-main.tscn::PackedScene/PackedScene::3890554508267155326::1751587743::0::1::::<><><>0<>0<><>::uid://vetyr080ykro::::res://CardManager.gd<>uid://cq1qgikhjqyvo::::res://Shroudveil_Back.png<>uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png<>uid://g82e817mw8yo::::res://PartySlot.tscn
+Juniper_Playmat.tscn::PackedScene::5804576740322776398::1751757094::0::1::::<><><>0<>0<><>::uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png<>uid://b0j3jvoln4a4p::::res://Playmat.gd
+main.tscn::PackedScene::3890554508267155326::1751758428::0::1::::<><><>0<>0<><>::uid://vetyr080ykro::::res://CardManager.gd<>uid://cq1qgikhjqyvo::::res://Shroudveil_Back.png<>uid://cf1d2q5dx1dh3::::res://Playmats/Juniper_Playmat.png<>uid://g82e817mw8yo::::res://PartySlot.tscn
 networkinglol.gd::GDScript/GDScript::6943486703193052036::1751587732::0::1::::<>Node2D<><>0<>0<><>::
-PartySlot.tscn::PackedScene/PackedScene::490905804598823858::1751587743::0::1::::<><><>0<>0<><>::uid://b0j3jvoln4a4p::::res://Playmat.gd
+PartySlot.tscn::PackedScene::490905804598823858::1751757094::0::1::::<><><>0<>0<><>::uid://b0j3jvoln4a4p::::res://Playmat.gd
 Playmat.gd::GDScript/GDScript::4161438447508971393::1751587732::0::1::::<>Node2D<><>0<>0<><>::
 Shroudveil_Back.png::CompressedTexture2D/CompressedTexture2D::5950519309813544872::1751429496::1751430013::1::::<><><>0<>0<>4ab582800e9629d9fd9ee88455eff342<>res://.godot/imported/Shroudveil_Back.png-1705bc3444b6528f0454a37a06b8f4f7.ctex::
 ::res://Card Backs/::1751418809
@@ -28,50 +28,75 @@ Spells.png::CompressedTexture2D/CompressedTexture2D::7258300099664365827::175142
 Support.png::CompressedTexture2D/CompressedTexture2D::6399741538277665527::1751429430::1751430013::1::::<><><>0<>0<>734a53c9c5178c3604b35a1e90c69b03<>res://.godot/imported/Support.png-8855431a1c990d64f8679ba91ab2b21e.ctex::
 Warrior.png::CompressedTexture2D/CompressedTexture2D::2364135607056838261::1751429443::1751430014::1::::<><><>0<>0<>6d8040e5b394cf026791b4f2de099347<>res://.godot/imported/Warrior.png-bcd988e91f9f347e886842f7dbc03ff0.ctex::
 ::res://Cards/Scenes/::1751592626
-::res://Cards/Scenes/Adventurers/::1751688354
-aurthur.tscn::PackedScene::5030350440914214103::1751665057::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dc4fb5cjpgtix::::res://Cards/Set B/163Aurthur.png
+::res://Cards/Scenes/Adventurers/::1751757094
+aurthur.tscn::PackedScene/PackedScene::5030350440914214103::1751665057::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dc4fb5cjpgtix::::res://Cards/Set B/163Aurthur.png
 berri,_the_guilty.tscn::PackedScene/PackedScene::2682492577074898860::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://4860w0xr2546::::res://Cards/Set B/006Berri,_the_Guilty.png
-bonsai_lvl_1.tscn::PackedScene::2622118099677791628::1751664583::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bjhjmfcfa4mam::::res://Cards/Set B/166Bonsai.png
-bonsai_lvl_2.tscn::PackedScene::3426062958153513239::1751664508::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://co16x0jt826nn::::res://Cards/Set B/167Bonsai.png
+blue_mushroom_lvl_1.tscn::PackedScene/PackedScene::7120614639137367657::1751747056::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ybhmguq2jhdl::::res://Cards/Set B/143Blue_Mushroom.png
+blue_mushroom_lvl_2.tscn::PackedScene/PackedScene::6660685723377195759::1751746934::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://btvbu02i6x2gl::::res://Cards/Set B/144Blue_Mushroom.png
+bonsai_lvl_1.tscn::PackedScene/PackedScene::2622118099677791628::1751664583::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bjhjmfcfa4mam::::res://Cards/Set B/166Bonsai.png
+bonsai_lvl_2.tscn::PackedScene/PackedScene::3426062958153513239::1751664508::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://co16x0jt826nn::::res://Cards/Set B/167Bonsai.png
 clothbearer.tscn::PackedScene/PackedScene::3160768537820328557::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dkr2a3hh1c2hm::::res://Cards/Set B/016Clothbearer.png
 clothbearer_lvl_2.tscn::PackedScene/PackedScene::7407629525104871151::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bdndo87g1orcd::::res://Cards/Set B/017Clothbearer_(Lvl_2).png
+clover_lvl_1.tscn::PackedScene/PackedScene::8508284408992942536::1751748830::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://q5uqu27p76rm::::res://Cards/Set B/132Clover.png
+clover_lvl_2.tscn::PackedScene/PackedScene::4794033566051006289::1751748766::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://babiyiyiv1ks0::::res://Cards/Set B/133Clover.png
+fumbling_scarecrow.tscn::PackedScene/PackedScene::7885870253858574556::1751746862::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://wbdec0jt48cn::::res://Cards/Set B/145Fumbling_Scarecrow.png
+gluttonous_beast.tscn::PackedScene/PackedScene::4802987814065147627::1751749238::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d1aecdchrdr8l::::res://Cards/Set B/131Gluttonous_Beast.png
 goop_demon.tscn::PackedScene/PackedScene::729229009491112684::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://mno3h37ivk7d::::res://Cards/Set B/010Goop_Demon.png
-jackson.tscn::PackedScene::203004214387421032::1751665239::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b1k8k14bhn6on::::res://Cards/Set B/160Jackson.png
+green_mushroom_lvl_1.tscn::PackedScene/PackedScene::600982258746863865::1751747122::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cu8njo37ailni::::res://Cards/Set B/142Green_Mushroom.png
+igor.tscn::PackedScene/PackedScene::233923165171434984::1751746738::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c6h2847do7l6n::::res://Cards/Set B/146Igor.png
+jackson.tscn::PackedScene/PackedScene::203004214387421032::1751665239::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b1k8k14bhn6on::::res://Cards/Set B/160Jackson.png
 juniper,_spoon_weilder.tscn::PackedScene/PackedScene::4008277018341282950::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bs13i8nrmyiv2::::res://Cards/Set B/005Juniper,_Spoon_Weilder.png
 juniper.tscn::PackedScene/PackedScene::6778015668232674721::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://kob5quowowia::::res://Cards/Set B/003Juniper.png
 juniper_lvl_2.tscn::PackedScene/PackedScene::3737841217740566242::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c38st3t8ljhl8::::res://Cards/Set B/004Juniper_(Lvl_2).png
-katsura_lvl_1.tscn::PackedScene::1875568356644612862::1751687412::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cv6n5hp0uq24g::::res://Cards/Set B/155Katsura.png
-katsura_lvl_2.tscn::PackedScene::8450702756815794680::1751687368::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://8xt45f0em4fk::::res://Cards/Set B/156Katsura.png
-katsura_lvl_max.tscn::PackedScene::9174079406758819315::1751687209::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://crmmtqn6y4gpp::::res://Cards/Set B/157Katsura.png
-lizzy,_tamer_of_monsters.tscn::PackedScene::755440302992104960::1751664686::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c2t27iegyybdg::::res://Cards/Set B/165Lizzy,_Tamer_of_Monsters.png
-mangled_hound_lvl_1.tscn::PackedScene::8150951974044437607::1751663736::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ltw850r7wh1::::res://Cards/Set B/170Mangled_Hound.png
-mangled_hound_lvl_2.tscn::PackedScene::8397840224441828239::1751663727::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://oqs0g80ewvfs::::res://Cards/Set B/171Mangled_Hound.png
-mangled_hound_max.tscn::PackedScene::2912097141240865560::1751663727::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dla7m8hkpumni::::res://Cards/Set B/172Mangled_Hound.png
+katsura_lvl_1.tscn::PackedScene/PackedScene::1875568356644612862::1751687412::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cv6n5hp0uq24g::::res://Cards/Set B/155Katsura.png
+katsura_lvl_2.tscn::PackedScene/PackedScene::8450702756815794680::1751687368::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://8xt45f0em4fk::::res://Cards/Set B/156Katsura.png
+katsura_lvl_max.tscn::PackedScene/PackedScene::9174079406758819315::1751687209::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://crmmtqn6y4gpp::::res://Cards/Set B/157Katsura.png
+lizzy,_tamer_of_monsters.tscn::PackedScene/PackedScene::755440302992104960::1751664686::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c2t27iegyybdg::::res://Cards/Set B/165Lizzy,_Tamer_of_Monsters.png
+mangled_hound_lvl_1.tscn::PackedScene/PackedScene::8150951974044437607::1751663736::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ltw850r7wh1::::res://Cards/Set B/170Mangled_Hound.png
+mangled_hound_lvl_2.tscn::PackedScene/PackedScene::8397840224441828239::1751663727::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://oqs0g80ewvfs::::res://Cards/Set B/171Mangled_Hound.png
+mangled_hound_max.tscn::PackedScene/PackedScene::2912097141240865560::1751663727::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dla7m8hkpumni::::res://Cards/Set B/172Mangled_Hound.png
 maple,_the_exiled.tscn::PackedScene/PackedScene::1993219903443610623::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ofbcgeg2bsg1::::res://Cards/Set B/008Maple,_the_Exiled.png
-mikael_lvl_1.tscn::PackedScene::4135804712638898134::1751687998::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://f8q6w7n3psc7::::res://Cards/Set B/151Mikael.png
-mikael_lvl_2.tscn::PackedScene::7909789175114844967::1751687929::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bp27qoboj1y7v::::res://Cards/Set B/152Mikael.png
-mikael_lvl_max.tscn::PackedScene::1777708754975966101::1751687841::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://fv5rffsfve61::::res://Cards/Set B/153Mikael.png
+mikael_lvl_1.tscn::PackedScene/PackedScene::4135804712638898134::1751687998::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://f8q6w7n3psc7::::res://Cards/Set B/151Mikael.png
+mikael_lvl_2.tscn::PackedScene/PackedScene::7909789175114844967::1751687929::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bp27qoboj1y7v::::res://Cards/Set B/152Mikael.png
+mikael_lvl_max.tscn::PackedScene/PackedScene::1777708754975966101::1751687841::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://fv5rffsfve61::::res://Cards/Set B/153Mikael.png
+mud_demon.tscn::PackedScene/PackedScene::3124161959661105716::1751748713::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bj3xfpk2v5pqk::::res://Cards/Set B/134Ink_Demon.png
 ninelives_clerk.tscn::PackedScene/PackedScene::4705324301670361706::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cgt52k2daga4y::::res://Cards/Set B/011NineLives_Clerk.png
 ninelives_clerk_lvl_2.tscn::PackedScene/PackedScene::1644991253036958220::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://be80m3nd5o7k4::::res://Cards/Set B/012NineLives_Clerk_(Lvl_2).png
+oakley_lvl_1.tscn::PackedScene/PackedScene::8249335364592633982::1751746670::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dam1qash44cjo::::res://Cards/Set B/147Oakley.png
+oakley_lvl_2.tscn::PackedScene/PackedScene::146724673238330995::1751746663::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://vso0nwtxuitu::::res://Cards/Set B/148Oakley.png
+oakley_lvl_max.tscn::PackedScene/PackedScene::8399849125948506730::1751746663::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c0kkqd0bw1hxc::::res://Cards/Set B/149Oakley.png
 oliver,_the_accused.tscn::PackedScene/PackedScene::3634269672683146454::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cw2332k6lbq26::::res://Cards/Set B/007Oliver,_the_Accused.png
-paprika_lvl_1.tscn::PackedScene::6290433686163116565::1751664407::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d25f346605hsx::::res://Cards/Set B/168Paprika.png
-paprika_lvl_2.tscn::PackedScene::3153886272942594329::1751664348::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cyimmpv1hp1hw::::res://Cards/Set B/169Paprika.png
-percival.tscn::PackedScene::5288741624830492541::1751687519::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ccd6iktceqjqq::::res://Cards/Set B/154Percival.png
+paprika_lvl_1.tscn::PackedScene/PackedScene::6290433686163116565::1751664407::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d25f346605hsx::::res://Cards/Set B/168Paprika.png
+paprika_lvl_2.tscn::PackedScene/PackedScene::3153886272942594329::1751664348::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cyimmpv1hp1hw::::res://Cards/Set B/169Paprika.png
+percival.tscn::PackedScene/PackedScene::5288741624830492541::1751687519::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ccd6iktceqjqq::::res://Cards/Set B/154Percival.png
+pridelands_heretic.tscn::PackedScene/PackedScene::5959370388076298580::1751748209::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b348v6hnix8ul::::res://Cards/Set B/139Pridelands_Heretic.png
+ramsus_lvl_1.tscn::PackedScene/PackedScene::8537968899834137966::1751748540::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://crhpstke8qxkf::::res://Cards/Set B/136Ramsus.png
+ramsus_lvl_2.tscn::PackedScene/PackedScene::6559165155266654670::1751748488::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://r24iq0toefs1::::res://Cards/Set B/137Ramsus.png
+ramsus_lvl_max.tscn::PackedScene/PackedScene::6805755914100849635::1751748357::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://xka7ljwfwlfs::::res://Cards/Set B/138Ramsus.png
 razz.tscn::PackedScene/PackedScene::5952031113960327173::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c0irk7mbbgsrt::::res://Cards/Set B/013Razz.png
 razz_interloper.tscn::PackedScene/PackedScene::1410570298109222122::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bdmv3utuhgisc::::res://Cards/Set B/015Razz,_Interloper.png
 razz_lvl_2.tscn::PackedScene/PackedScene::9179424642435938191::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://77clo84o10eu::::res://Cards/Set B/014Razz_(Lvl_2).png
+red_mushroom_lvl_1.tscn::PackedScene/PackedScene::7960037128699440613::1751747223::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b3xiawpve8l5m::::res://Cards/Set B/140Red_Mushroom.png
+red_mushroom_lvl_2.tscn::PackedScene/PackedScene::4560724347108273877::1751747172::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bxqa623mp5y3h::::res://Cards/Set B/141Red_Mushroom.png
 rungelgan.tscn::PackedScene/PackedScene::8308006201568627944::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b3m8wm1rxvurq::::res://Cards/Set B/018Rungelgan.png
 rungelgan_lvl_2.tscn::PackedScene/PackedScene::1599482576698788836::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dckvy1dwjgmwk::::res://Cards/Set B/019Rungelgan_(Lvl_2).png
-rye_lvl_1.tscn::PackedScene::1607606770481075379::1751687227::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://yekxhedn2g8c::::res://Cards/Set B/158Rye.png
-rye_lvl_2.tscn::PackedScene::5193053856378680284::1751669848::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cmusg8rt0mxdy::::res://Cards/Set B/159Rye.png
-samuel.tscn::PackedScene::5420494541716628697::1751664984::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b3thxt0b683qd::::res://Cards/Set B/164Samuel.png
+rye_lvl_1.tscn::PackedScene/PackedScene::1607606770481075379::1751687227::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://yekxhedn2g8c::::res://Cards/Set B/158Rye.png
+rye_lvl_2.tscn::PackedScene/PackedScene::5193053856378680284::1751669848::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cmusg8rt0mxdy::::res://Cards/Set B/159Rye.png
+samuel.tscn::PackedScene/PackedScene::5420494541716628697::1751664984::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b3thxt0b683qd::::res://Cards/Set B/164Samuel.png
 scramble,_the_soothed.tscn::PackedScene/PackedScene::1055543951650710913::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cp11thbvjlt4u::::res://Cards/Set B/002Scramble,_the_Soothed.png
 scramble.tscn::PackedScene/PackedScene::5587581732121383737::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bombds2iyct0v::::res://Cards/Set B/000Scramble.png
 scramble_lvl_2.tscn::PackedScene/PackedScene::7739174951542415544::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bfb0x37teqeia::::res://Cards/Set B/001Scramble_(Lvl_2).png
-sebastion.tscn::PackedScene::8367921028507503518::1751688354::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b4k0jf73luo3b::::res://Cards/Set B/150Sebastion.png
-sindri_lvl_1.tscn::PackedScene::9078544767372020107::1751665182::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bj5sygki3g64y::::res://Cards/Set B/161Sindri.png
-sindri_lvl_2.tscn::PackedScene::3830319204532206589::1751665133::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://q0paiwa5tbch::::res://Cards/Set B/162Sindri.png
+sebastion.tscn::PackedScene/PackedScene::8367921028507503518::1751688354::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b4k0jf73luo3b::::res://Cards/Set B/150Sebastion.png
+sindri_lvl_1.tscn::PackedScene/PackedScene::9078544767372020107::1751665182::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bj5sygki3g64y::::res://Cards/Set B/161Sindri.png
+sindri_lvl_2.tscn::PackedScene/PackedScene::3830319204532206589::1751665133::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://q0paiwa5tbch::::res://Cards/Set B/162Sindri.png
+snout.tscn::PackedScene/PackedScene::6212663082531418406::1751748589::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cmeksn6t5jgoj::::res://Cards/Set B/135Snout.png
+the_bland_white_cube.tscn::PackedScene::2093557711444384674::1751757094::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cmtw3ttaw677c::::res://Cards/Set B/126The_Bland_White_Cube.png
 the_pridemaster.tscn::PackedScene/PackedScene::3645229635126408593::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b7g37hqt4g524::::res://Cards/Set B/009The_Pridemaster.png
+the_shroudwalker_(chester).tscn::PackedScene/PackedScene::2576765327097909450::1751749936::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dn20w25mpgcjq::::res://Cards/Set B/125The_Shroudwalker.png
+the_shroud_devouring_monster.tscn::PackedScene/PackedScene::1949388140788615634::1751749410::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bfd7mdfrnfrqy::::res://Cards/Set B/128The_Shroud-Devouring_Monster.png
+the_waffle_man.tscn::PackedScene::3256487724753929028::1751757094::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://gkj78qr2ipws::::res://Cards/Set B/127The_Waffle_Man.png
+wayfarer_lvl_1.tscn::PackedScene/PackedScene::3427057299670871480::1751749361::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://lc6up06xwbr::::res://Cards/Set B/129Wayfarer.png
+wayfarer_lvl_2.tscn::PackedScene/PackedScene::9071502195515240500::1751749304::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://7pxoilfu5kns::::res://Cards/Set B/130Wayfarer.png
 willow.tscn::PackedScene/PackedScene::6095754256033535187::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://umr3n1xp0glc::::res://Cards/Set B/020Willow.png
 willow_lvl_2.tscn::PackedScene/PackedScene::2523122259062162400::1751591734::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cu5i2ham7qxkg::::res://Cards/Set B/021Willow_(Lvl_2).png
 ::res://Cards/Scenes/HQ/::1751502209
@@ -88,30 +113,30 @@ the_ninelives_emporium.tscn::PackedScene/PackedScene::2628539927214661136::17515
 totemkin_village.tscn::PackedScene/PackedScene::552502570149864342::1751501156::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dcd8j43gyq5t::::res://Cards/Set B/239Totemkin_Village.png
 underground_game_ring.tscn::PackedScene/PackedScene::8662037637060014560::1751501310::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c2ysec5cklqa1::::res://Cards/Set B/237Underground_Game_Ring.png
 ::res://Cards/Scenes/Items/::1751663722
-armistice_agreement.tscn::PackedScene::807580758394881016::1751594411::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bw506pxt80e3::::res://Cards/Set B/176Armistice_Agreement.png
-bear_trap.tscn::PackedScene::658936330165279831::1751594012::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://debfp5h7ltjap::::res://Cards/Set B/184Bear_Trap.png
+armistice_agreement.tscn::PackedScene/PackedScene::807580758394881016::1751594411::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bw506pxt80e3::::res://Cards/Set B/176Armistice_Agreement.png
+bear_trap.tscn::PackedScene/PackedScene::658936330165279831::1751594012::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://debfp5h7ltjap::::res://Cards/Set B/184Bear_Trap.png
 binoculars.tscn::PackedScene/PackedScene::3443924042103744258::1751593109::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d346fvkgingb8::::res://Cards/Set B/193Binoculars.png
-building_plans.tscn::PackedScene::2192133021667416534::1751594251::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bepuctln0e8hk::::res://Cards/Set B/179Building_Plans.png
-butterfly_wings.tscn::PackedScene::7834574691590496150::1751593509::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bssn0lybo2jj5::::res://Cards/Set B/192Butterfly_Wings.png
-firestarter.tscn::PackedScene::8387137019392457277::1751594301::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ccvsh042cwhl3::::res://Cards/Set B/178Firestarter.png
-goon_for_hire.tscn::PackedScene::4690628528734551226::1751594463::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c6oj71vj8klwg::::res://Cards/Set B/175Goon_for_Hire.png
+building_plans.tscn::PackedScene/PackedScene::2192133021667416534::1751594251::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bepuctln0e8hk::::res://Cards/Set B/179Building_Plans.png
+butterfly_wings.tscn::PackedScene/PackedScene::7834574691590496150::1751593509::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bssn0lybo2jj5::::res://Cards/Set B/192Butterfly_Wings.png
+firestarter.tscn::PackedScene/PackedScene::8387137019392457277::1751594301::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ccvsh042cwhl3::::res://Cards/Set B/178Firestarter.png
+goon_for_hire.tscn::PackedScene/PackedScene::4690628528734551226::1751594463::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c6oj71vj8klwg::::res://Cards/Set B/175Goon_for_Hire.png
 hair_tie.tscn::PackedScene/PackedScene::5282716630172012729::1751592841::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c1p2yxy6snw7e::::res://Cards/Set B/194Hair_Tie.png
-infinite_putty.tscn::PackedScene::8051883139657959230::1751593765::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://3le8albqtmmj::::res://Cards/Set B/187Infinite_Putty.png
-inspection_notice.tscn::PackedScene::4687289909381002474::1751593901::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bdav7ruuu5hl2::::res://Cards/Set B/186Inspection_Notice.png
-lashing_whip.tscn::PackedScene::1506759031596601679::1751594110::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ca0st0wm0hvgs::::res://Cards/Set B/182Lashing_Whip.png
+infinite_putty.tscn::PackedScene/PackedScene::8051883139657959230::1751593765::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://3le8albqtmmj::::res://Cards/Set B/187Infinite_Putty.png
+inspection_notice.tscn::PackedScene/PackedScene::4687289909381002474::1751593901::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bdav7ruuu5hl2::::res://Cards/Set B/186Inspection_Notice.png
+lashing_whip.tscn::PackedScene/PackedScene::1506759031596601679::1751594110::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://ca0st0wm0hvgs::::res://Cards/Set B/182Lashing_Whip.png
 legally_distinct_bouncepad.tscn::PackedScene/PackedScene::8522488816717483546::1751592740::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://1iu5icgehtk7::::res://Cards/Set B/196Legally_Distinct_Bouncepad.png
-light_snack.tscn::PackedScene::1903010729196495077::1751593962::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dx0ldp85uvyc7::::res://Cards/Set B/185Light_Snack.png
-loan_shark.tscn::PackedScene::2583969703460857554::1751594535::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bofy1d4cjfq45::::res://Cards/Set B/173Loan_Shark.png
-milk.tscn::PackedScene::6222944133451373511::1751593653::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://6xtgostywt8m::::res://Cards/Set B/189Milk.png
-orb_of_visions.tscn::PackedScene::838431644537811724::1751594351::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d0kwu0fhty61u::::res://Cards/Set B/177Orb_of_Visions.png
+light_snack.tscn::PackedScene/PackedScene::1903010729196495077::1751593962::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dx0ldp85uvyc7::::res://Cards/Set B/185Light_Snack.png
+loan_shark.tscn::PackedScene/PackedScene::2583969703460857554::1751594535::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bofy1d4cjfq45::::res://Cards/Set B/173Loan_Shark.png
+milk.tscn::PackedScene/PackedScene::6222944133451373511::1751593653::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://6xtgostywt8m::::res://Cards/Set B/189Milk.png
+orb_of_visions.tscn::PackedScene/PackedScene::838431644537811724::1751594351::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d0kwu0fhty61u::::res://Cards/Set B/177Orb_of_Visions.png
 pool_of_mirrors.tscn::PackedScene/PackedScene::5565966330390219967::1751592784::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dh1jxcjitfnnu::::res://Cards/Set B/195Pool_of_Mirrors.png
-powder_keg.tscn::PackedScene::117250785940454333::1751594504::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://byd5fl8ibmg2r::::res://Cards/Set B/174Powder_Keg.png
-pumpkin_latte.tscn::PackedScene::5119378484871531747::1751594208::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://doxp38lsjhosi::::res://Cards/Set B/180Pumpkin_Latte.png
-quest_board_refresh.tscn::PackedScene::8772229455601829390::1751593700::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bkpkf1egmspc8::::res://Cards/Set B/188Quest_Board_Refresh.png
-respawn_flag.tscn::PackedScene::7867081854554490560::1751593613::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://buh12kq61lknq::::res://Cards/Set B/190Respawn_Flag.png
-spare_key.tscn::PackedScene::8905222479067648245::1751593569::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://drc4olproyvhr::::res://Cards/Set B/191Spare_Key.png
-wheel_of_equilibrium.tscn::PackedScene::3474773971597634694::1751594066::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://jq4mo5kdd0de::::res://Cards/Set B/183Wheel_of_Equilibrium.png
-wind_chimes.tscn::PackedScene::5049914072983559299::1751594156::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d1ic2kinlggte::::res://Cards/Set B/181Wind_Chimes.png
+powder_keg.tscn::PackedScene/PackedScene::117250785940454333::1751594504::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://byd5fl8ibmg2r::::res://Cards/Set B/174Powder_Keg.png
+pumpkin_latte.tscn::PackedScene/PackedScene::5119378484871531747::1751594208::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://doxp38lsjhosi::::res://Cards/Set B/180Pumpkin_Latte.png
+quest_board_refresh.tscn::PackedScene/PackedScene::8772229455601829390::1751593700::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://bkpkf1egmspc8::::res://Cards/Set B/188Quest_Board_Refresh.png
+respawn_flag.tscn::PackedScene/PackedScene::7867081854554490560::1751593613::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://buh12kq61lknq::::res://Cards/Set B/190Respawn_Flag.png
+spare_key.tscn::PackedScene/PackedScene::8905222479067648245::1751593569::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://drc4olproyvhr::::res://Cards/Set B/191Spare_Key.png
+wheel_of_equilibrium.tscn::PackedScene/PackedScene::3474773971597634694::1751594066::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://jq4mo5kdd0de::::res://Cards/Set B/183Wheel_of_Equilibrium.png
+wind_chimes.tscn::PackedScene/PackedScene::5049914072983559299::1751594156::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d1ic2kinlggte::::res://Cards/Set B/181Wind_Chimes.png
 ::res://Cards/Scenes/relics/::1751503104
 crown_of_avarice.tscn::PackedScene/PackedScene::2992121848212231901::1751503033::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dp3puw22lac67::::res://Cards/Set B/222Crown_of_Avarice.png
 cursed_overdrive.tscn::PackedScene/PackedScene::3613140514646443814::1751502810::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d2vofn37tnawu::::res://Cards/Set B/225Cursed_Overdrive.png
@@ -125,7 +150,7 @@ poison_claw.tscn::PackedScene/PackedScene::3932939000276541687::1751502531::0::1
 promise_band.tscn::PackedScene/PackedScene::1630119744609897665::1751503104::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://68f5v6e0ngyb::::res://Cards/Set B/221Promise_Band.png
 wicked_grimoire.tscn::PackedScene/PackedScene::8323202493878956520::1751501914::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://btalg3mnss2cm::::res://Cards/Set B/232Wicked_Grimoire.png
 winged_shoes.tscn::PackedScene/PackedScene::4581254064348222811::1751502898::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cu3ux0ucbojbk::::res://Cards/Set B/224Winged_Shoes.png
-::res://Cards/Scenes/Spells/::1751593432
+::res://Cards/Scenes/Spells/::1751757094
 blow_up_the_ocean!.tscn::PackedScene/PackedScene::1998546623350274868::1751590686::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dwu6it0bvwy3j::::res://Cards/Set B/211BLOW_UP_THE_OCEAN!.png
 critical_hit!.tscn::PackedScene/PackedScene::4714696096557854991::1751591386::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://erwtyqun0hd0::::res://Cards/Set B/201Critical_Hit!.png
 demotivational_speech.tscn::PackedScene/PackedScene::298700839188724041::1751590757::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://c4dwlllxnsed4::::res://Cards/Set B/210Demotivational_Speech.png
@@ -140,7 +165,7 @@ nuh_uh_moment.tscn::PackedScene/PackedScene::879527408591094291::1751589674::0::
 patch_notes.tscn::PackedScene/PackedScene::1697634431974396274::1751589804::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d33dykfne2u3o::::res://Cards/Set B/215Patch_Notes.png
 picking_wonders.tscn::PackedScene/PackedScene::6265813731077343572::1751591434::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cdwg0n50td0yc::::res://Cards/Set B/200Picking_Wonders.png
 poke_the_bear.tscn::PackedScene/PackedScene::2463050262907611335::1751591472::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://b2di1r8te5cqw::::res://Cards/Set B/199Poke_the_Bear.png
-razz's_explosive_blast.tscn::PackedScene::4037033338311920595::1751593432::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cljsghiw3012o::::res://Cards/Set B/218Razz's_Explosive_Blast.png
+razz's_explosive_blast.tscn::PackedScene::4037033338311920595::1751757094::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://cljsghiw3012o::::res://Cards/Set B/218Razz's_Explosive_Blast.png
 riches_to_rags.tscn::PackedScene/PackedScene::6455467956391806198::1751591283::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://wafe3c53k7nf::::res://Cards/Set B/202Riches_to_Rags.png
 routine_maintenance.tscn::PackedScene/PackedScene::366506053693813066::1751591110::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://d0t44t3dxj7mu::::res://Cards/Set B/204Routine_Maintenance.png
 siphon_power.tscn::PackedScene/PackedScene::338888080915228330::1751591152::0::1::::<><><>0<>0<><>::uid://6ckr7qwfkwvc::::res://scripts/Card_Template.gd<>uid://dpppg3j20jhne::::res://Cards/Set B/203Siphon_Power.png
@@ -521,8 +546,8 @@ ward_practice.tscn::PackedScene/PackedScene::2053534740790531187::1751590949::0:
 IMG_6099.png::CompressedTexture2D/CompressedTexture2D::1151066307373135893::1751429535::1751430013::1::::<><><>0<>0<>5fe08401699abfc40e525d620e93f467<>res://.godot/imported/IMG_6099.png-18cde2e1639bcbb9135f37efcf19b7ae.ctex::
 Juniper_Playmat.png::CompressedTexture2D/CompressedTexture2D::5177690661481452214::1751418600::1751418796::1::::<><><>0<>0<>d05e53a917e0fa26e897b2d6958c0b61<>res://.godot/imported/Juniper_Playmat.png-9babf8f15c5ae04d5218644e0597434b.ctex::
 Scramble_Bell.png::CompressedTexture2D/CompressedTexture2D::4654251124571749153::1751418664::1751418799::1::::<><><>0<>0<>418943b2af8e2505009ff17604e8225f<>res://.godot/imported/Scramble_Bell.png-8259bf5b2d3ad1e05c0a9eba9ddb83fa.ctex::
-::res://scripts/::1751669848
-Card_Template.gd::GDScript::2180622143181926788::1751669848::0::1::::Card<>Node2D<><>0<>0<><>::
+::res://scripts/::1751755273
+Card_Template.gd::GDScript/GDScript::2180622143181926788::1751755273::0::1::::Card<>Node2D<><>0<>0<><>::
 PlayerHand.gd::GDScript/GDScript::6198880038340782231::1751587732::0::1::::<>Node<><>0<>0<><>::
 ::res://scripts/Cards/::1751587732
 Scramble.gd::GDScript/GDScript::1942379511651199830::1751587732::0::1::::Scramble<>Node2D<><>0<>0<><>::

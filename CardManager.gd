@@ -28,7 +28,6 @@ func raycast_check_for_card_slot():
 	parameters.collide_with_areas = true
 	parameters.collision_mask = COLLISION_MASK_CARD_SLOT
 	var result = space_state.intersect_point(parameters)
-	print(result)
 	if result.size() > 0:
 		return result[0].collider.get_parent()
 	return null
