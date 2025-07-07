@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6wjm5urbcajr"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_bdepk"]
+[ext_resource type="Texture2D" uid="uid://vbs6pe8h3rht" path="res://Cards/Set B/087Eat_the_Rich.png" id="2_bdepk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="FesteringSpite" type="Node2D"]
+script = ExtResource("1_bdepk")
+CardName = "Festering Spite"
+CardDescriptionm = "Take 1 Guild Damage. Then, Yield 1 Bundles for each Guild Damage you have. Your opponent may do the same."
+CardCost = 5
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_bdepk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

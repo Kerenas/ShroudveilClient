@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://3cb02f0oarwg"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_toghr"]
+[ext_resource type="Texture2D" uid="uid://dlmckuplys7fw" path="res://Cards/Set B/025Astrid_(Lvl_2).png" id="2_toghr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0y4xe"]
+size = Vector2(150, 210)
+
+[node name="AstridLvl2" type="Node2D"]
+script = ExtResource("1_toghr")
+CardName = "Astrid"
+CardDescriptionm = "*Double Hit (This Adventurer hits twice. When it Raids, if the first hit Defeats, the second targets the Guild)* When Astrid is Defeated, you may search your deck for a LVL 1 Dragon, reveal it, and put it in one of your empty Party Slots."
+CardCost = 7
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Dragon"
+AdventurerType = "Warrior"
+AdventurerHP = 20
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_toghr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_0y4xe")

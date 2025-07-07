@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://btxbdcwruns84"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_c4lxd"]
+[ext_resource type="Texture2D" uid="uid://bw4dy2joi5ipr" path="res://Cards/Set B/028Birch.png" id="2_c4lxd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_semvq"]
+size = Vector2(150, 210)
+
+[node name="Birch" type="Node2D"]
+script = ExtResource("1_c4lxd")
+CardName = "Birch"
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Fox"
+AdventurerType = "Warrior"
+AdventurerHP = 8
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_c4lxd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_semvq")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dypjpuf5iv2q6"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_ckwwx"]
+[ext_resource type="Texture2D" uid="uid://cieuehbfy1tmk" path="res://Cards/Set B/038Slime_(Lvl_2).png" id="2_ckwwx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq68b"]
+size = Vector2(150, 210)
+
+[node name="SlimeLvl2" type="Node2D"]
+script = ExtResource("1_ckwwx")
+CardName = "Slime"
+CardDescriptionm = "Lions in your Party gain +1 HP. Once during your Follow-Up Step, if you chose to Raid this turn, you may pay 3 bundles. If you do, target opponent discards the top 3 cards of their deck."
+CardCost = 3
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 3
+AdventurerHP = 5
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ckwwx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fq68b")

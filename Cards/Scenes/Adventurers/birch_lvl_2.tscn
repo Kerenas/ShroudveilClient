@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcao8sed2qku1"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_435xm"]
+[ext_resource type="Texture2D" uid="uid://cciciq1tijrtu" path="res://Cards/Set B/029Birch_(Lvl_2).png" id="2_435xm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_semvq"]
+size = Vector2(150, 210)
+
+[node name="BirchLvl2" type="Node2D"]
+script = ExtResource("1_435xm")
+CardName = "Birch"
+CardDescriptionm = "When Bitch enters the Party, if you played a spell this turn, this card gains 3 Buff Counters."
+CardCost = 7
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Fox"
+AdventurerType = "Warrior"
+AdventurerAttack = 2
+AdventurerHP = 12
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_435xm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_semvq")

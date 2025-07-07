@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c75q3xjpx8jfr"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_05yfj"]
+[ext_resource type="Texture2D" uid="uid://viar7bpek2hx" path="res://Cards/Set B/089Unbreakable_Ward.png" id="2_05yfj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umvs5"]
+size = Vector2(150, 210)
+
+[node name="UnbreakableWard" type="Node2D"]
+script = ExtResource("1_05yfj")
+CardName = "Unbreakable Ward"
+CardDescriptionm = "Target Item, Spell, or Class has its effects negated unitl the next End Step. Any damage dealt by that card is also negated."
+CardCost = 7
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_05yfj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_umvs5")

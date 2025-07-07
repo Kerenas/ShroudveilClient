@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1gr3fm21unhc"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xuk5u"]
+[ext_resource type="Texture2D" uid="uid://dofs7coqf0b42" path="res://Cards/Set B/073Kessa's_Darkness.png" id="2_xuk5u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7rgh"]
+size = Vector2(150, 210)
+
+[node name="Kessa\'sDarkness" type="Node2D"]
+script = ExtResource("1_xuk5u")
+CardName = "Kessa's Darkness"
+CardDescriptionm = "Draw 2 cards. You may not play any more Spells or Items for the rest of the game."
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_xuk5u")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l7rgh")

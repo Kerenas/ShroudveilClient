@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl1avifq1gur1"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_6oicr"]
+[ext_resource type="Texture2D" uid="uid://bowi4dk1pminf" path="res://Cards/Set B/039Slime_(MAX).png" id="2_6oicr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq68b"]
+size = Vector2(150, 210)
+
+[node name="SlimeMaxLvl" type="Node2D"]
+script = ExtResource("1_6oicr")
+CardName = "Slime"
+CardDescriptionm = "Lions in your Party gain +1 HP and +7 ATK. Once during your Adventuring Step, if you choose to Raid, put 2 Nerf counters on an Adventurer in play."
+CardCost = 5
+AdventurerYield = 6
+AdventurerLvl = 3
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 5
+AdventurerHP = 7
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_6oicr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fq68b")

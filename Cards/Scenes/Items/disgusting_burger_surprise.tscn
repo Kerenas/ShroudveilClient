@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2m14lm4t8tnf"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_1yii2"]
+[ext_resource type="Texture2D" uid="uid://cjv6r5nt0nnao" path="res://Cards/Set B/063Disgusting_Burger_Surprise.png" id="2_1yii2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lo73m"]
+size = Vector2(150, 210)
+
+[node name="DisgustingBurgerSurprise" type="Node2D"]
+script = ExtResource("1_1yii2")
+CardName = "Disgusting Burger Surprise"
+CardDescriptionm = "Choose 1: • Put 3 Buff counters on an Adventurer in your Party. • Put 1 Buff Counter on each Adventurer in your Party."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_1yii2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lo73m")

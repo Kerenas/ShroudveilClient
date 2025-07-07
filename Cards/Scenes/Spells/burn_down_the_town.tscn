@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj244gafy5bho"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_yd6bj"]
+[ext_resource type="Texture2D" uid="uid://dlace687k7lmc" path="res://Cards/Set B/074Burn_Down_the_Town!.png" id="2_yd6bj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kxgq8"]
+size = Vector2(150, 210)
+
+[node name="BurnDownTheTown" type="Node2D"]
+script = ExtResource("1_yd6bj")
+CardName = "Burn Down the Town!"
+CardDescriptionm = "Discard all face-up HQ cards on the field. You may not play another HQ card until your next Beginning Step."
+CardCost = 2
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_yd6bj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_kxgq8")

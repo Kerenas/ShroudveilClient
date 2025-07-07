@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0pxxduvi2x2k"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_nys30"]
+[ext_resource type="Texture2D" uid="uid://o2rk2h00dw7" path="res://Cards/Set B/097Birthright.png" id="2_nys30"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icdcq"]
+size = Vector2(150, 210)
+
+[node name="Birthright" type="Node2D"]
+script = ExtResource("1_nys30")
+CardName = "Birthright"
+CardDescriptionm = "*Relic Requirement: \"Juniper, Spoon Wielder\"* While Birthright is attached to an Adventurer, it gains Double Hit. *(That Adventurer hits twice. When it Raids, if the first hit Defeats, the second targets the Guild.)* If the attached Adventurer would be Defeated, it instead has 1 HP, and Birthright is discarded."
+CardCost = 7
+CardType = "Relic"
+AdventurerType = "Legendary"
+IsCrowned = true
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_nys30")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_icdcq")

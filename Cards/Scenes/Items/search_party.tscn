@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfpxov8dyhvil"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_qbkoe"]
+[ext_resource type="Texture2D" uid="uid://ya0tmakqdf0p" path="res://Cards/Set B/064Search_Party.png" id="2_qbkoe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qoqgy"]
+size = Vector2(150, 210)
+
+[node name="SearchParty" type="Node2D"]
+script = ExtResource("1_qbkoe")
+CardName = "Search Party"
+CardDescriptionm = "Look at the top 7 cards of your Deck. You may reveal up to 2 Adventurers you find and put them into your hand. Then, shuffle the rest of the cards back into your deck."
+CardCost = 4
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qbkoe")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qoqgy")

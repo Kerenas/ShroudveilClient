@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b53vwn3r15byx"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_vlyty"]
+[ext_resource type="Texture2D" uid="uid://kgmy66kfyvek" path="res://Cards/Set B/107Wizard's_Cloak.png" id="2_vlyty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icdcq"]
+size = Vector2(150, 210)
+
+[node name="Wizard\'sCloak" type="Node2D"]
+script = ExtResource("1_vlyty")
+CardName = "Wizard's Cloak"
+CardDescriptionm = "The attached Adventurer takes half damage from Arcane Class Adventurers and Spell effects.If a Spell is played while Wizard's Cloak is attached to an Adventurer, you may flip a coin. If heads, copy that Spell. You may choose new targets for the copied Spell."
+CardCost = 9
+CardType = "Relic"
+AdventurerType = "Arcane"
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_vlyty")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_icdcq")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq0ylcokpbo20"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_0fugr"]
+[ext_resource type="Texture2D" uid="uid://c6in3pnlm1807" path="res://Cards/Set B/090Reaper's_Touch.png" id="2_0fugr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afdb0"]
+size = Vector2(150, 210)
+
+[node name="Reaper\'sTouch" type="Node2D"]
+script = ExtResource("1_0fugr")
+CardName = "Reaper's Touch"
+CardDescriptionm = "This Spell costs 1 Bundles less for each Monster in your Shroud Zone. Target opponent discards five cards from the top of their deck."
+CardCost = 7
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0fugr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_afdb0")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://chyxdfu7as3qf"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_sk7np"]
+[ext_resource type="Texture2D" uid="uid://kjrf8bflobqv" path="res://Cards/Set B/095Desolation.png" id="2_sk7np"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eymw0"]
+size = Vector2(150, 210)
+
+[node name="Desolation" type="Node2D"]
+script = ExtResource("1_sk7np")
+CardName = "Desolation"
+CardDescriptionm = "Target Non-LVL 1 Adventurer with X total ATK is moved to the Shroud Zone."
+IsSpell = true
+IsXCost = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_sk7np")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_eymw0")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf5d8jukvum4k"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_82odb"]
+[ext_resource type="Texture2D" uid="uid://dw0a87uctx5f6" path="res://Cards/Set B/053Storage_Shed.png" id="2_82odb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qoqgy"]
+size = Vector2(150, 210)
+
+[node name="StorageShed" type="Node2D"]
+script = ExtResource("1_82odb")
+CardName = "Storage Shed"
+CardDescriptionm = "Search your deck for an Item and a Non-Legendary Relic card, reveal them, and put them in your hand. Then, shuffle your deck."
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_82odb")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qoqgy")

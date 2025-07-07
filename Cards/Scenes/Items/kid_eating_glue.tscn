@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://0a7amnk2y62v"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_xmrgu"]
+[ext_resource type="Texture2D" uid="uid://cyjr3lvk05e0b" path="res://Cards/Set B/055Kid_Eating_Glue.png" id="2_xmrgu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mfm0i"]
+size = Vector2(150, 210)
+
+[node name="KidEatingGlue" type="Node2D"]
+script = ExtResource("1_xmrgu")
+CardName = "Kid Eating Glue"
+CardDescriptionm = "Look at the top card of your deck. You may put that card into your hand. If you don't, discard that card and draw a card."
+CardCost = 2
+IsItem = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_xmrgu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_mfm0i")

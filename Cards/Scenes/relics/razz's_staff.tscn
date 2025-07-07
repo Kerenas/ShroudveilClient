@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwjy1jpd1idwu"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_je74p"]
+[ext_resource type="Texture2D" uid="uid://cd7vxl5gj4hs" path="res://Cards/Set B/099Razz's_Staff_(Fine_Red_Paste).png" id="2_je74p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_joj80"]
+size = Vector2(150, 210)
+
+[node name="Razz\'sStaff" type="Node2D"]
+script = ExtResource("1_je74p")
+CardName = "Razz's Staff (Fine Red Paste)"
+CardDescriptionm = "*Relic Requirement: \"Razz, Interloper\"* When the attached Adventurer Defeats an Adventurer, if it would reduce that Adventurer to below 0 HP, you may distribute that excess damage among your opponent's Party in any way you like."
+CardCost = 6
+CardType = "Relic"
+AdventurerType = "Legendary"
+IsCrowned = true
+IsRelic = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_je74p")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_joj80")

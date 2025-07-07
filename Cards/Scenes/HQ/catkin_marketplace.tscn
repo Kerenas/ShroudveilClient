@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyeoy0csfnrw2"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_p7yti"]
+[ext_resource type="Texture2D" uid="uid://c73pl25ytgioy" path="res://Cards/Set B/113Catkin_Marketplace.png" id="2_p7yti"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wc1y5"]
+size = Vector2(150, 210)
+
+[node name="CatkinMarketplace" type="Node2D"]
+script = ExtResource("1_p7yti")
+CardName = "Catkin Marketplace"
+CardDescriptionm = "When this card is flipped face-up, you may choose an item from you or your opponent's Stash and use that card's effect as this effect. If you do not, search your deck for an item, reveal it, and put it into your hand. Then shuffle your deck. Once during your turn, you may pay 4 Bundles. If you do, search your deck for an Item, reveal it, and put it in your hand. Then, shuffle your deck. Cat Adventurers in your Party have +2 Yield."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_p7yti")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wc1y5")

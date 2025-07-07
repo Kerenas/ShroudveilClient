@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://clwy10ji38nox"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_jxsbb"]
+[ext_resource type="Texture2D" uid="uid://cf467ow38pbrr" path="res://Cards/Set B/108The_Temple_of_Chime.png" id="2_jxsbb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6i6w"]
+size = Vector2(150, 210)
+
+[node name="TheTempleOfChime" type="Node2D"]
+script = ExtResource("1_jxsbb")
+CardName = "The Temple of Chime"
+CardDescriptionm = "When this card is flipped face-up, all Monster Adventurers in play are Defeated. If either player's Party has no Monster Adventurers, they take 1 Guild Damage instead, beginning with this card's Guildmaster. Discard The Temple of Chime at the end of the turn it was flipped face-up."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jxsbb")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_m6i6w")

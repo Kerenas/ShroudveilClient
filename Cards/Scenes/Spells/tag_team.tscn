@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://yidcee10w7sa"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_gw1wm"]
+[ext_resource type="Texture2D" uid="uid://bkdqv44nttg0i" path="res://Cards/Set B/088Tag_Team.png" id="2_gw1wm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orm5b"]
+size = Vector2(150, 210)
+
+[node name="Tag Team" type="Node2D"]
+script = ExtResource("1_gw1wm")
+CardName = "Tag Team"
+CardDescriptionm = "Target Adventurer in your Party is shuffled back into your deck, along with any attached cards. Search your deck for an Adventurer with the same LVL as the target and put it into one of your empty Party Slots. Then, shuffle your deck."
+CardCost = 6
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_gw1wm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_orm5b")

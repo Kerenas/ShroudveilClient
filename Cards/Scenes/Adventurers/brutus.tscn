@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://o7g17hin7swh"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_66xy2"]
+[ext_resource type="Texture2D" uid="uid://c8m0cxtpoow7w" path="res://Cards/Set B/026Brutus.png" id="2_66xy2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdwy2"]
+size = Vector2(150, 210)
+
+[node name="Brutus" type="Node2D"]
+script = ExtResource("1_66xy2")
+CardName = "Brutus"
+CardDescriptionm = "When you play Brutus from your hand onto an empty Party Slot, you may put 2 Nerf Counters on an Adventurer in play."
+AdventurerYield = 2
+AdventurerLvl = 1
+CardType = "Dragon"
+AdventurerType = "Support"
+AdventurerAttack = 3
+AdventurerHP = 3
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_66xy2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_rdwy2")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbo0py1vvcfrw"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_w1mxf"]
+[ext_resource type="Texture2D" uid="uid://ccopvvdn2jkrs" path="res://Cards/Set B/046Shapeshifter_(Lvl_2).png" id="2_w1mxf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq68b"]
+size = Vector2(150, 210)
+
+[node name="ShapeshifterLvl2" type="Node2D"]
+script = ExtResource("1_w1mxf")
+CardName = "Shapeshifter"
+CardDescriptionm = "Except the turn this card was played, you may search your Shroud Zone for a LVL 2 Adventurer and put that card in the Party Slot Shapeshifter is in. *(This does not count as entering the Party.)* If you do, shuffle this card and any attached cards back into your deck."
+CardCost = 3
+AdventurerYield = 4
+AdventurerLvl = 2
+CardType = "Monster"
+AdventurerType = "Support"
+AdventurerAttack = 6
+AdventurerHP = 6
+IsAdventurer = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_w1mxf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fq68b")

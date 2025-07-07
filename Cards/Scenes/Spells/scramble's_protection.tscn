@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c67l7xnwaas4j"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_itn1m"]
+[ext_resource type="Texture2D" uid="uid://do85ish0w1hke" path="res://Cards/Set B/079Scramble's_Protection.png" id="2_itn1m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qet2b"]
+size = Vector2(150, 210)
+
+[node name="Scramble\'sProtection" type="Node2D"]
+script = ExtResource("1_itn1m")
+CardName = "Scramble's Protection"
+CardDescriptionm = "Negate damage dealt by one of your opponent's Adventuters to an Adventurer in your party. If this card is played during your opponent's turn, you may also pay 2 bundles. If you do, target Adventurer in your Party Disappears until the next end step."
+CardCost = 4
+IsSpell = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_itn1m")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qet2b")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://box4yoxgfyvvu"]
+
+[ext_resource type="Script" uid="uid://6ckr7qwfkwvc" path="res://scripts/Card_Template.gd" id="1_pqfoh"]
+[ext_resource type="Texture2D" uid="uid://bufyoykphj1uj" path="res://Cards/Set B/112Castle_of_the_Prideful.png" id="2_pqfoh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wc1y5"]
+size = Vector2(150, 210)
+
+[node name="CastleOfThePrideful" type="Node2D"]
+script = ExtResource("1_pqfoh")
+CardName = "Castle of the Prideful"
+CardDescriptionm = "When this card is flipped face-up, you may put a Ward Counter on a Lion in your Party. That Ward Counter breaks at the end of the turn. Lions in your Party cannot take damage from Items and Spells. If this card is sent to the Shroud Zone by an opponent's card effect, you take 1 Guild Damage."
+IsHQ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_pqfoh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wc1y5")
